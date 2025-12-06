@@ -1,0 +1,22 @@
+{
+  "name": "Zunkiree Labs",
+  "tagline": "Building Digital Excellence",
+  "description": "We craft premium digital experiences that transform businesses. Custom software, AI solutions, and digital products that drive growth.",
+  "url": "https://zunkiree.com",
+  "email": "hello@zunkiree.com",
+  "phone": "+977-XXX-XXXX",
+  "address": {
+    "street": "",
+    "city": "Kathmandu",
+    "country": "Nepal"
+  },
+  "social": {
+    "twitter": "https://twitter.com/zunkiree",
+    "linkedin": "https://linkedin.com/company/zunkiree",
+    "github": "https://github.com/zunkiree"
+  },
+  "meta": {
+    "title": "Zunkiree Labs | Premium Digital Solutions",
+    "ogImage": "/assets/images/og-image.jpg"
+  }
+}
