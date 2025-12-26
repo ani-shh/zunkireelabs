@@ -1,28 +1,70 @@
 {
   "main": [
-    { "label": "Home", "url": "/" },
-    { "label": "About", "url": "/about/" },
-    { "label": "Services", "url": "/services/" },
-    { "label": "Projects", "url": "/projects/" },
-    { "label": "Blog", "url": "/blog/" },
-    { "label": "Contact", "url": "/contact/" }
+    {
+      "label": "Product",
+      "hasDropdown": true,
+      "dropdownType": "product",
+      "items": [
+        {
+          "id": "zunkiree-search",
+          "label": "Zunkiree Search",
+          "description": "AI-native search and interaction",
+          "extendedDescription": "Transform how users find and engage with information. AI-native search layer for modern, data-driven platforms that delivers intelligent, context-aware results.",
+          "icon": "search",
+          "badge": "Primary",
+          "url": "/products/search/"
+        },
+        {
+          "id": "gaamma",
+          "label": "Gaamma",
+          "description": "Manufacturing ERP platform",
+          "extendedDescription": "Full-scale manufacturing ERP focused on operational efficiency and digital transformation. Built for modern factories and production workflows.",
+          "icon": "factory",
+          "url": "/products/gaamma/"
+        },
+        {
+          "id": "dental-ai",
+          "label": "Dental AI Assistant",
+          "description": "Vertical AI for dental workflows",
+          "extendedDescription": "AI assistant designed for dental operations and customer interaction. Streamlines patient communication and practice management.",
+          "icon": "health",
+          "badge": "Coming Soon",
+          "url": "/products/dental-ai/"
+        }
+      ]
+    },
+    {
+      "label": "Services",
+      "url": "/services/"
+    },
+    {
+      "label": "Customer Stories",
+      "url": "/customers/"
+    },
+    {
+      "label": "Company",
+      "hasDropdown": true,
+      "dropdownType": "simple",
+      "items": [
+        { "label": "About", "description": "Our story and mission", "url": "/about/" },
+        { "label": "Careers", "description": "Join our team", "url": "/careers/" }
+      ]
+    }
   ],
   "footer": {
+    "products": [
+      { "label": "Zunkiree Search", "url": "/products/search/" },
+      { "label": "Gaamma", "url": "/products/gaamma/" },
+      { "label": "Dental AI Assistant", "url": "/products/dental-ai/" }
+    ],
     "company": [
       { "label": "About Us", "url": "/about/" },
-      { "label": "Our Team", "url": "/about/#team" },
-      { "label": "Careers", "url": "/careers/" }
-    ],
-    "services": [
-      { "label": "Web Development", "url": "/services/#web" },
-      { "label": "AI Solutions", "url": "/services/#ai" },
-      { "label": "Mobile Apps", "url": "/services/#mobile" },
-      { "label": "Consulting", "url": "/services/#consulting" }
+      { "label": "Careers", "url": "/careers/" },
+      { "label": "Contact", "url": "/contact/" }
     ],
     "resources": [
-      { "label": "Blog", "url": "/blog/" },
-      { "label": "Case Studies", "url": "/projects/" },
-      { "label": "Documentation", "url": "/docs/" }
+      { "label": "Customer Stories", "url": "/customers/" },
+      { "label": "Services", "url": "/services/" }
     ]
   }
 }

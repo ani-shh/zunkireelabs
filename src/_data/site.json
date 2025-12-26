@@ -1,7 +1,7 @@
 {
   "name": "Zunkiree Labs",
-  "tagline": "Building Digital Excellence",
-  "description": "We craft premium digital experiences that transform businesses. Custom software, AI solutions, and digital products that drive growth.",
+  "tagline": "AI-native search and interaction for modern platforms",
+  "description": "ZunkireeLabs builds intelligent systems that sit closer to your data and your users. Our flagship product, Zunkiree Search, transforms information discovery and user interaction.",
   "url": "https://zunkiree.com",
   "email": "info@zunkireelabs.com",
   "phone": "+977-9849839728",
@@ -16,7 +16,7 @@
     "github": "https://github.com/zunkiree"
   },
   "meta": {
-    "title": "Zunkiree Labs | Premium Digital Solutions",
+    "title": "Zunkiree Labs | AI-Native Search & Interaction Platform",
     "ogImage": "/assets/images/og-image.jpg"
   }
 }

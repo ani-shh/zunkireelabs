@@ -1,43 +1,46 @@
 ---
 layout: base.njk
-title: Zunkiree Labs | Premium Digital Solutions
-description: We craft premium digital experiences that transform businesses. Custom software, AI solutions, and digital products that drive growth.
+title: Zunkiree Labs | AI-Native Search & Interaction Platform
+description: ZunkireeLabs builds intelligent systems for modern digital platforms. Our flagship product, Zunkiree Search, transforms information discovery and user interaction.
 permalink: /
 ---
 
 {# =====================================================
    SECTION 1: HERO (Duna-inspired)
    ===================================================== #}
-<section class="hero-duna relative min-h-screen flex items-center justify-center overflow-hidden">
-  {# Background Image #}
+<section class="hero-duna relative flex items-center justify-center overflow-hidden bg-[#e8f4f8]" style="min-height: max(100vh, 50vw);">
+  {# Background Image - full image visible, no cropping #}
   <div class="hero-bg absolute inset-0">
     <img
-      src="/assets/images/hero-bg.avif"
+      src="/assets/images/hero-bg.webp"
       alt=""
-      class="w-full h-full object-cover object-center"
+      class="w-full h-full object-contain object-top"
       loading="eager"
     />
-    {# Gradient overlay - only fades at bottom 30% for seamless transition while keeping hero vibrant #}
-    <div class="absolute inset-0 bg-gradient-to-b from-transparent from-70% to-white/95"></div>
+    {# Gradient overlay - fades at bottom for seamless transition to white sections #}
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent from-70% to-white"></div>
   </div>
 
-  {# Content - vertically centered #}
-  <div class="relative z-10 max-w-[1200px] mx-auto px-5 md:px-10 text-center">
+  {# Content - vertically centered in hero #}
+  <div class="relative z-10 max-w-[1200px] mx-auto px-5 md:px-10 text-center pt-[72px]">
     {# Headline - Duna style with tight letter-spacing #}
-    <h1 class="hero-headline text-[40px] sm:text-[52px] md:text-[64px] lg:text-[72px] font-medium text-white tracking-[-0.04em] leading-[1.1] mb-6 drop-shadow-lg" data-reveal>
-      The new standard<br>
-      <span class="text-white/90">in digital products</span>
+    <h1 class="hero-headline text-[40px] sm:text-[52px] md:text-[64px] lg:text-[72px] font-medium text-black tracking-[-0.04em] leading-[1.1] mb-6" data-reveal>
+      AI-native search and interaction<br>
+      <span class="text-black">for modern digital platforms</span>
     </h1>
 
     {# Subheadline #}
-    <p class="text-lg md:text-xl text-white/85 max-w-xl mx-auto mb-10 leading-relaxed tracking-[-0.01em] drop-shadow-md" data-reveal>
-      Meet the studio that accelerates business growth, automates complexity, and builds products that scale.
+    <p class="text-lg md:text-xl text-black max-w-2xl mx-auto mb-10 leading-relaxed tracking-[-0.01em]" data-reveal>
+      ZunkireeLabs builds AI-native systems that connect business data to customer-facing experiences. Our core platform enables users to interact with information through natural language.
     </p>
 
-    {# Single CTA - Dark button like Duna #}
-    <div data-reveal>
+    {# Dual CTAs - Primary dark, Secondary outline #}
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4" data-reveal>
       <a href="/contact/" class="inline-flex items-center justify-center px-7 py-3.5 bg-warm-rich-black text-white font-medium text-base rounded-xl hover:bg-warm-black transition-all duration-200 hover:-translate-y-0.5 shadow-lg">
-        Get started
+        Schedule a Demo
+      </a>
+      <a href="/contact/" class="inline-flex items-center justify-center px-7 py-3.5 border border-black/30 text-black font-medium text-base rounded-xl hover:bg-black/5 transition-all duration-200">
+        Talk to Us
       </a>
     </div>
   </div>
@@ -63,394 +66,640 @@ permalink: /
 </section>
 
 {# =====================================================
-   SECTION 3: SERVICES (Duna-style)
+   SECTION 3: VALUE PROPOSITION (Built around one core idea)
    ===================================================== #}
-<section id="services" class="py-16 md:py-24 lg:py-32">
+<section class="py-16 md:py-24 lg:py-32">
   <div class="max-w-[1200px] mx-auto px-5 md:px-10">
-    {# Section Header #}
-    <div class="max-w-2xl mb-16" data-reveal>
-      <p class="text-sm font-medium text-warm-400 tracking-wide mb-4">What We Do</p>
+    {# Section Header - Centered #}
+    <div class="text-center max-w-3xl mx-auto mb-16" data-reveal>
+      <p class="text-sm font-medium text-warm-400 tracking-wide mb-4">Our Philosophy</p>
       <h2 class="text-3xl md:text-4xl lg:text-[44px] font-medium text-warm-black tracking-[-0.03em] leading-[1.2] mb-5">
-        Services that drive growth
+        Built around one core idea
       </h2>
-      <p class="text-lg text-warm-600 tracking-[-0.01em] leading-relaxed">
-        We offer end-to-end digital solutions tailored to your unique challenges and goals.
+      <p class="text-xl text-warm-600 tracking-[-0.01em] leading-relaxed">
+        Intelligence should sit closer to your data — and your users
       </p>
     </div>
 
-    {# Services Grid #}
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {# Service Card 1 #}
-      <div class="group bg-white rounded-2xl p-8 border border-warm-border hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300" data-reveal>
-        <div class="w-12 h-12 bg-warm-surface rounded-xl flex items-center justify-center text-warm-charcoal mb-6 group-hover:bg-warm-charcoal group-hover:text-white transition-colors duration-300">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+    {# Description #}
+    <div class="max-w-2xl mx-auto text-center mb-16" data-reveal>
+      <p class="text-lg text-warm-600 leading-relaxed">
+        Modern digital products generate massive amounts of data, but users still struggle to find clear answers. ZunkireeLabs is building the intelligence layer that bridges this gap — starting with AI-native search and expanding into broader interaction and decision systems.
+      </p>
+    </div>
+
+    {# Three Value Props #}
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {# Value Prop 1 #}
+      <div class="text-center" data-reveal>
+        <div class="w-14 h-14 bg-warm-surface rounded-2xl flex items-center justify-center text-warm-charcoal mx-auto mb-6">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
           </svg>
         </div>
-        <h3 class="text-xl font-medium text-warm-black tracking-[-0.02em] mb-3">Web Development</h3>
-        <p class="text-warm-600 leading-relaxed mb-6">High-performance web applications built with modern technologies. From landing pages to complex platforms.</p>
-        <a href="/services/#web" class="inline-flex items-center gap-1 text-warm-charcoal font-medium hover:gap-2 transition-all duration-200">
-          Learn more <span>&rarr;</span>
-        </a>
+        <h3 class="text-xl font-medium text-warm-black tracking-[-0.02em] mb-3">Unified understanding</h3>
+        <p class="text-warm-600 leading-relaxed">Connect disparate data sources into a single intelligence layer that understands context across your entire platform.</p>
       </div>
 
-      {# Service Card 2 #}
-      <div class="group bg-white rounded-2xl p-8 border border-warm-border hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300" data-reveal>
-        <div class="w-12 h-12 bg-warm-surface rounded-xl flex items-center justify-center text-warm-charcoal mb-6 group-hover:bg-warm-charcoal group-hover:text-white transition-colors duration-300">
+      {# Value Prop 2 #}
+      <div class="text-center" data-reveal>
+        <div class="w-14 h-14 bg-warm-surface rounded-2xl flex items-center justify-center text-warm-charcoal mx-auto mb-6">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-medium text-warm-black tracking-[-0.02em] mb-3">Contextual responses</h3>
+        <p class="text-warm-600 leading-relaxed">Deliver accurate, meaningful answers by understanding intent and meaning — not just keywords.</p>
+      </div>
+
+      {# Value Prop 3 #}
+      <div class="text-center" data-reveal>
+        <div class="w-14 h-14 bg-warm-surface rounded-2xl flex items-center justify-center text-warm-charcoal mx-auto mb-6">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-medium text-warm-black tracking-[-0.02em] mb-3">Seamless integration</h3>
+        <p class="text-warm-600 leading-relaxed">Works with your existing systems and data sources without requiring a full platform rebuild.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# =====================================================
+   SECTION 4: STATS (Duna-style)
+   ===================================================== #}
+<section class="py-16 md:py-24 bg-white">
+  <div class="max-w-[1200px] mx-auto px-5 md:px-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
+      <div class="text-center" data-reveal>
+        <div class="text-5xl md:text-6xl font-medium text-warm-black tracking-[-0.03em] mb-2">
+          <span data-counter="10" data-suffix="x">0</span>
+        </div>
+        <p class="text-warm-600 font-medium">Faster search responses</p>
+      </div>
+      <div class="text-center" data-reveal>
+        <div class="text-5xl md:text-6xl font-medium text-warm-black tracking-[-0.03em] mb-2">
+          <span data-counter="99" data-suffix="%">0</span>
+        </div>
+        <p class="text-warm-600 font-medium">Query accuracy</p>
+      </div>
+      <div class="text-center" data-reveal>
+        <div class="text-5xl md:text-6xl font-medium text-warm-black tracking-[-0.03em] mb-2">
+          <span data-counter="24" data-suffix="/7">0</span>
+        </div>
+        <p class="text-warm-600 font-medium">System availability</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# =====================================================
+   SECTION 5: ZUNKIREE SEARCH FEATURE (Tabbed Interface)
+   ===================================================== #}
+<section class="py-16 md:py-24 lg:py-32 bg-warm-off-white" x-data="{ activeTab: 1 }">
+  <div class="max-w-[1200px] mx-auto px-5 md:px-10">
+    {# Section Header #}
+    <div class="flex items-start justify-between mb-12" data-reveal>
+      <div>
+        <h2 class="text-3xl md:text-4xl lg:text-[44px] font-medium text-warm-black tracking-[-0.03em] leading-[1.1] mb-3">
+          Zunkiree Search
+        </h2>
+        <p class="text-lg md:text-xl text-warm-600 tracking-[-0.01em]">
+          The AI-native interaction layer for modern platforms
+        </p>
+      </div>
+      <a href="/products/search/" class="hidden sm:inline-flex items-center gap-1.5 px-5 py-2.5 border border-warm-border rounded-full text-warm-700 font-medium hover:bg-warm-surface transition-all duration-200">
+        Explore
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+        </svg>
+      </a>
+    </div>
+
+    {# Two Column Layout: Tabs + Preview #}
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+      {# Left: Clickable Tabs #}
+      <div class="space-y-3" data-reveal>
+        {# Tab 1: Reduce Friction #}
+        <button
+          @click="activeTab = 1"
+          class="w-full text-left p-4 rounded-xl transition-all duration-200"
+          :class="activeTab === 1 ? 'bg-warm-surface' : 'hover:bg-warm-surface/50'"
+        >
+          <div class="flex items-start gap-3">
+            <div class="w-6 h-6 mt-0.5 flex-shrink-0" :class="activeTab === 1 ? 'text-zunkiree-600' : 'text-warm-400'">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <span class="font-medium text-warm-black block">Reduce friction</span>
+              <p
+                class="text-warm-600 text-sm mt-1.5 leading-relaxed overflow-hidden transition-all duration-300"
+                :class="activeTab === 1 ? 'max-h-24 opacity-100' : 'max-h-0 opacity-0'"
+              >
+                Streamline how users discover and understand information. Natural language queries replace complex filters and navigation.
+              </p>
+            </div>
+          </div>
+        </button>
+
+        {# Tab 2: Complex to Conversational #}
+        <button
+          @click="activeTab = 2"
+          class="w-full text-left p-4 rounded-xl transition-all duration-200"
+          :class="activeTab === 2 ? 'bg-warm-surface' : 'hover:bg-warm-surface/50'"
+        >
+          <div class="flex items-start gap-3">
+            <div class="w-6 h-6 mt-0.5 flex-shrink-0" :class="activeTab === 2 ? 'text-zunkiree-600' : 'text-warm-400'">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+              </svg>
+            </div>
+            <div>
+              <span class="font-medium text-warm-black block">Complex to conversational</span>
+              <p
+                class="text-warm-600 text-sm mt-1.5 leading-relaxed overflow-hidden transition-all duration-300"
+                :class="activeTab === 2 ? 'max-h-24 opacity-100' : 'max-h-0 opacity-0'"
+              >
+                Transform structured data into accessible dialogue. Users ask questions in plain language and receive contextual answers.
+              </p>
+            </div>
+          </div>
+        </button>
+
+        {# Tab 3: Improve Engagement #}
+        <button
+          @click="activeTab = 3"
+          class="w-full text-left p-4 rounded-xl transition-all duration-200"
+          :class="activeTab === 3 ? 'bg-warm-surface' : 'hover:bg-warm-surface/50'"
+        >
+          <div class="flex items-start gap-3">
+            <div class="w-6 h-6 mt-0.5 flex-shrink-0" :class="activeTab === 3 ? 'text-zunkiree-600' : 'text-warm-400'">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+              </svg>
+            </div>
+            <div>
+              <span class="font-medium text-warm-black block">Improve engagement</span>
+              <p
+                class="text-warm-600 text-sm mt-1.5 leading-relaxed overflow-hidden transition-all duration-300"
+                :class="activeTab === 3 ? 'max-h-24 opacity-100' : 'max-h-0 opacity-0'"
+              >
+                Clearer touchpoints lead to better user experiences. Increase time-on-site and reduce support queries with instant answers.
+              </p>
+            </div>
+          </div>
+        </button>
+
+        {# Tab 4: Scale Intelligently #}
+        <button
+          @click="activeTab = 4"
+          class="w-full text-left p-4 rounded-xl transition-all duration-200"
+          :class="activeTab === 4 ? 'bg-warm-surface' : 'hover:bg-warm-surface/50'"
+        >
+          <div class="flex items-start gap-3">
+            <div class="w-6 h-6 mt-0.5 flex-shrink-0" :class="activeTab === 4 ? 'text-zunkiree-600' : 'text-warm-400'">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <div>
+              <span class="font-medium text-warm-black block">Scale intelligently</span>
+              <p
+                class="text-warm-600 text-sm mt-1.5 leading-relaxed overflow-hidden transition-all duration-300"
+                :class="activeTab === 4 ? 'max-h-24 opacity-100' : 'max-h-0 opacity-0'"
+              >
+                Handle growing data volumes and user traffic without degrading performance. Built for enterprise-scale workloads.
+              </p>
+            </div>
+          </div>
+        </button>
+
+        {# CTA Button #}
+        <div class="pt-4">
+          <a href="/contact/" class="inline-flex items-center gap-2 px-6 py-3 bg-zunkiree-600 text-white font-medium rounded-xl hover:bg-zunkiree-700 transition-all duration-200">
+            Schedule a Demo
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      {# Right: Preview Cards #}
+      <div class="relative min-h-[400px]" data-reveal>
+        {# Card 1: Search Query Example #}
+        <div
+          x-show="activeTab === 1"
+          x-transition:enter="transition ease-out duration-300"
+          x-transition:enter-start="opacity-0 translate-y-4"
+          x-transition:enter-end="opacity-100 translate-y-0"
+          x-transition:leave="transition ease-in duration-200"
+          x-transition:leave-start="opacity-100 translate-y-0"
+          x-transition:leave-end="opacity-0 -translate-y-4"
+          class="absolute inset-0 bg-warm-surface rounded-2xl p-8 flex flex-col"
+        >
+          <div class="flex-1 flex flex-col items-center justify-center text-center">
+            <div class="w-16 h-16 bg-zunkiree-600 rounded-2xl flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </div>
+            <p class="text-warm-black font-medium text-lg mb-4">Natural Language Query</p>
+            <div class="bg-white rounded-xl p-4 w-full max-w-sm shadow-sm">
+              <p class="text-warm-600 italic">"Show me all orders from last month with delivery issues"</p>
+            </div>
+            <p class="text-warm-500 text-sm mt-4">Instant contextual results</p>
+          </div>
+        </div>
+
+        {# Card 2: Conversational Interface #}
+        <div
+          x-show="activeTab === 2"
+          x-transition:enter="transition ease-out duration-300"
+          x-transition:enter-start="opacity-0 translate-y-4"
+          x-transition:enter-end="opacity-100 translate-y-0"
+          x-transition:leave="transition ease-in duration-200"
+          x-transition:leave-start="opacity-100 translate-y-0"
+          x-transition:leave-end="opacity-0 -translate-y-4"
+          class="absolute inset-0 bg-warm-surface rounded-2xl p-8 flex flex-col"
+        >
+          <div class="flex-1 flex flex-col justify-center space-y-4">
+            {# User message #}
+            <div class="flex justify-end">
+              <div class="bg-zunkiree-600 text-white rounded-2xl rounded-br-md px-4 py-3 max-w-[80%]">
+                <p class="text-sm">What's the return policy for electronics?</p>
+              </div>
+            </div>
+            {# AI response #}
+            <div class="flex justify-start">
+              <div class="bg-white rounded-2xl rounded-bl-md px-4 py-3 max-w-[80%] shadow-sm">
+                <p class="text-sm text-warm-700">Electronics can be returned within 30 days with original packaging. Items must be in working condition. Refunds are processed within 5-7 business days.</p>
+              </div>
+            </div>
+            {# Follow-up #}
+            <div class="flex justify-end">
+              <div class="bg-zunkiree-600 text-white rounded-2xl rounded-br-md px-4 py-3 max-w-[80%]">
+                <p class="text-sm">Does that include opened items?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {# Card 3: Engagement Metrics #}
+        <div
+          x-show="activeTab === 3"
+          x-transition:enter="transition ease-out duration-300"
+          x-transition:enter-start="opacity-0 translate-y-4"
+          x-transition:enter-end="opacity-100 translate-y-0"
+          x-transition:leave="transition ease-in duration-200"
+          x-transition:leave-start="opacity-100 translate-y-0"
+          x-transition:leave-end="opacity-0 -translate-y-4"
+          class="absolute inset-0 bg-warm-surface rounded-2xl p-8 flex flex-col"
+        >
+          <div class="flex-1 flex flex-col justify-center">
+            <div class="grid grid-cols-2 gap-4">
+              <div class="bg-white rounded-xl p-5 text-center">
+                <p class="text-3xl font-medium text-zunkiree-600 mb-1">+47%</p>
+                <p class="text-warm-600 text-sm">User engagement</p>
+              </div>
+              <div class="bg-white rounded-xl p-5 text-center">
+                <p class="text-3xl font-medium text-zunkiree-600 mb-1">-62%</p>
+                <p class="text-warm-600 text-sm">Support tickets</p>
+              </div>
+              <div class="bg-white rounded-xl p-5 text-center">
+                <p class="text-3xl font-medium text-zunkiree-600 mb-1">3.2x</p>
+                <p class="text-warm-600 text-sm">Time on site</p>
+              </div>
+              <div class="bg-white rounded-xl p-5 text-center">
+                <p class="text-3xl font-medium text-zunkiree-600 mb-1">89%</p>
+                <p class="text-warm-600 text-sm">Query resolution</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {# Card 4: Scale Infrastructure #}
+        <div
+          x-show="activeTab === 4"
+          x-transition:enter="transition ease-out duration-300"
+          x-transition:enter-start="opacity-0 translate-y-4"
+          x-transition:enter-end="opacity-100 translate-y-0"
+          x-transition:leave="transition ease-in duration-200"
+          x-transition:leave-start="opacity-100 translate-y-0"
+          x-transition:leave-end="opacity-0 -translate-y-4"
+          class="absolute inset-0 bg-warm-surface rounded-2xl p-8 flex flex-col"
+        >
+          <div class="flex-1 flex flex-col justify-center">
+            {# Timeline/steps visual #}
+            <div class="space-y-4">
+              <div class="flex items-center gap-4">
+                <div class="w-3 h-3 bg-zunkiree-600 rounded-full"></div>
+                <div class="flex-1 bg-white rounded-xl p-4">
+                  <p class="text-warm-black font-medium">1M+ queries/day</p>
+                  <p class="text-warm-500 text-sm">Handled without performance degradation</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-3 h-3 bg-zunkiree-600 rounded-full"></div>
+                <div class="flex-1 bg-white rounded-xl p-4">
+                  <p class="text-warm-black font-medium">&lt;100ms response time</p>
+                  <p class="text-warm-500 text-sm">P95 latency across all queries</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div class="w-3 h-3 bg-zunkiree-600 rounded-full"></div>
+                <div class="flex-1 bg-white rounded-xl p-4">
+                  <p class="text-warm-black font-medium">Auto-scaling</p>
+                  <p class="text-warm-500 text-sm">Elastic infrastructure that grows with demand</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# =====================================================
+   SECTION 6: PLATFORM ARCHITECTURE DIAGRAM
+   ===================================================== #}
+<section class="py-16 md:py-24 lg:py-32">
+  <div class="max-w-[1200px] mx-auto px-5 md:px-10">
+    {# Section Header #}
+    <div class="text-center max-w-2xl mx-auto mb-16" data-reveal>
+      <p class="text-sm font-medium text-warm-400 tracking-wide mb-4">Platform Architecture</p>
+      <h2 class="text-3xl md:text-4xl lg:text-[44px] font-medium text-warm-black tracking-[-0.03em] leading-[1.2]">
+        The infrastructure behind every decision
+      </h2>
+    </div>
+
+    {# Architecture Diagram #}
+    <div class="relative" data-reveal>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-stretch">
+        {# Left: Data Sources #}
+        <div class="flex flex-col">
+          <h3 class="text-lg font-medium text-warm-black text-center mb-6">Data Sources</h3>
+          <div class="flex-1 space-y-3">
+            <div class="bg-warm-surface rounded-xl p-4 flex items-center gap-3">
+              <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+                <svg class="w-5 h-5 text-warm-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
+                </svg>
+              </div>
+              <span class="text-warm-700 font-medium">Databases</span>
+            </div>
+            <div class="bg-warm-surface rounded-xl p-4 flex items-center gap-3">
+              <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+                <svg class="w-5 h-5 text-warm-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <span class="text-warm-700 font-medium">APIs</span>
+            </div>
+            <div class="bg-warm-surface rounded-xl p-4 flex items-center gap-3">
+              <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+                <svg class="w-5 h-5 text-warm-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+              </div>
+              <span class="text-warm-700 font-medium">Documents</span>
+            </div>
+            <div class="bg-warm-surface rounded-xl p-4 flex items-center gap-3">
+              <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+                <svg class="w-5 h-5 text-warm-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+              </div>
+              <span class="text-warm-700 font-medium">Real-time Feeds</span>
+            </div>
+          </div>
+        </div>
+
+        {# Center: Zunkiree Search Engine #}
+        <div class="flex flex-col items-center justify-center py-8 md:py-0">
+          {# Connecting arrows on desktop #}
+          <div class="hidden md:flex items-center w-full">
+            <div class="flex-1 h-0.5 bg-gradient-to-r from-warm-border to-zunkiree-300"></div>
+            <div class="bg-zunkiree-600 text-white rounded-2xl p-8 text-center shadow-xl mx-4 relative z-10">
+              <div class="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-medium mb-2">Zunkiree Search</h3>
+              <p class="text-white/80 text-sm">AI-Native Engine</p>
+            </div>
+            <div class="flex-1 h-0.5 bg-gradient-to-r from-zunkiree-300 to-warm-border"></div>
+          </div>
+          {# Mobile version #}
+          <div class="md:hidden bg-zunkiree-600 text-white rounded-2xl p-8 text-center shadow-xl w-full">
+            <div class="w-16 h-16 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-xl font-medium mb-2">Zunkiree Search</h3>
+            <p class="text-white/80 text-sm">AI-Native Engine</p>
+          </div>
+        </div>
+
+        {# Right: User Experiences #}
+        <div class="flex flex-col">
+          <h3 class="text-lg font-medium text-warm-black text-center mb-6">User Experiences</h3>
+          <div class="flex-1 space-y-3">
+            <div class="bg-warm-surface rounded-xl p-4 flex items-center gap-3">
+              <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+                <svg class="w-5 h-5 text-warm-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                </svg>
+              </div>
+              <span class="text-warm-700 font-medium">Search Interfaces</span>
+            </div>
+            <div class="bg-warm-surface rounded-xl p-4 flex items-center gap-3">
+              <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+                <svg class="w-5 h-5 text-warm-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+                </svg>
+              </div>
+              <span class="text-warm-700 font-medium">Chatbots</span>
+            </div>
+            <div class="bg-warm-surface rounded-xl p-4 flex items-center gap-3">
+              <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+                <svg class="w-5 h-5 text-warm-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                </svg>
+              </div>
+              <span class="text-warm-700 font-medium">Dashboards</span>
+            </div>
+            <div class="bg-warm-surface rounded-xl p-4 flex items-center gap-3">
+              <div class="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
+                <svg class="w-5 h-5 text-warm-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <span class="text-warm-700 font-medium">Mobile Apps</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# =====================================================
+   SECTION 7: PLATFORM MINDSET
+   ===================================================== #}
+<section class="py-16 md:py-24 lg:py-32 bg-warm-off-white">
+  <div class="max-w-[1200px] mx-auto px-5 md:px-10">
+    {# Section Header #}
+    <div class="text-center max-w-2xl mx-auto mb-16" data-reveal>
+      <h2 class="text-3xl md:text-4xl lg:text-[44px] font-medium text-warm-black tracking-[-0.03em] leading-[1.2] mb-5">
+        Built for systems that last
+      </h2>
+      <p class="text-lg text-warm-600 tracking-[-0.01em] leading-relaxed">
+        ZunkireeLabs builds platforms with a long-term architectural mindset.
+      </p>
+    </div>
+
+    {# 4 Focus Areas #}
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+      {# Focus 1 #}
+      <div class="bg-white rounded-2xl p-6 border border-warm-border" data-reveal>
+        <div class="w-12 h-12 bg-zunkiree-50 rounded-xl flex items-center justify-center text-zunkiree-600 mb-4">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
           </svg>
         </div>
-        <h3 class="text-xl font-medium text-warm-black tracking-[-0.02em] mb-3">AI Solutions</h3>
-        <p class="text-warm-600 leading-relaxed mb-6">Intelligent automation and AI integration to streamline operations and enhance decision-making.</p>
-        <a href="/services/#ai" class="inline-flex items-center gap-1 text-warm-charcoal font-medium hover:gap-2 transition-all duration-200">
-          Learn more <span>&rarr;</span>
-        </a>
+        <h3 class="text-lg font-medium text-warm-black tracking-[-0.01em] mb-2">AI-native foundations</h3>
+        <p class="text-warm-600 text-sm leading-relaxed">Built from the ground up with AI at the core, not bolted on as an afterthought.</p>
       </div>
 
-      {# Service Card 3 #}
-      <div class="group bg-white rounded-2xl p-8 border border-warm-border hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300" data-reveal>
-        <div class="w-12 h-12 bg-warm-surface rounded-xl flex items-center justify-center text-warm-charcoal mb-6 group-hover:bg-warm-charcoal group-hover:text-white transition-colors duration-300">
+      {# Focus 2 #}
+      <div class="bg-white rounded-2xl p-6 border border-warm-border" data-reveal>
+        <div class="w-12 h-12 bg-zunkiree-50 rounded-xl flex items-center justify-center text-zunkiree-600 mb-4">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
           </svg>
         </div>
-        <h3 class="text-xl font-medium text-warm-black tracking-[-0.02em] mb-3">Mobile Apps</h3>
-        <p class="text-warm-600 leading-relaxed mb-6">Native and cross-platform mobile applications that deliver exceptional user experiences.</p>
-        <a href="/services/#mobile" class="inline-flex items-center gap-1 text-warm-charcoal font-medium hover:gap-2 transition-all duration-200">
+        <h3 class="text-lg font-medium text-warm-black tracking-[-0.01em] mb-2">Clean data connectivity</h3>
+        <p class="text-warm-600 text-sm leading-relaxed">Seamless integration with your existing data sources and infrastructure.</p>
+      </div>
+
+      {# Focus 3 #}
+      <div class="bg-white rounded-2xl p-6 border border-warm-border" data-reveal>
+        <div class="w-12 h-12 bg-zunkiree-50 rounded-xl flex items-center justify-center text-zunkiree-600 mb-4">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
+          </svg>
+        </div>
+        <h3 class="text-lg font-medium text-warm-black tracking-[-0.01em] mb-2">Modular design</h3>
+        <p class="text-warm-600 text-sm leading-relaxed">Extensible architecture that grows with your needs without rebuilding.</p>
+      </div>
+
+      {# Focus 4 #}
+      <div class="bg-white rounded-2xl p-6 border border-warm-border" data-reveal>
+        <div class="w-12 h-12 bg-zunkiree-50 rounded-xl flex items-center justify-center text-zunkiree-600 mb-4">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+          </svg>
+        </div>
+        <h3 class="text-lg font-medium text-warm-black tracking-[-0.01em] mb-2">Evolving systems</h3>
+        <p class="text-warm-600 text-sm leading-relaxed">Designed to adapt and improve as your business needs change over time.</p>
+      </div>
+    </div>
+
+    {# Goal Statement #}
+    <p class="text-center text-lg text-warm-600 max-w-2xl mx-auto" data-reveal>
+      Our goal is to build software that compounds value over time.
+    </p>
+  </div>
+</section>
+
+{# =====================================================
+   SECTION 8: PRODUCTS OVERVIEW
+   ===================================================== #}
+<section class="py-16 md:py-24 lg:py-32">
+  <div class="max-w-[1200px] mx-auto px-5 md:px-10">
+    {# Section Header #}
+    <div class="text-center max-w-2xl mx-auto mb-16" data-reveal>
+      <p class="text-sm font-medium text-warm-400 tracking-wide mb-4">What We Build</p>
+      <h2 class="text-3xl md:text-4xl lg:text-[44px] font-medium text-warm-black tracking-[-0.03em] leading-[1.2]">
+        Our Products
+      </h2>
+    </div>
+
+    {# Products Grid #}
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {# Product 1: Zunkiree Search (Featured) #}
+      <div class="group bg-zunkiree-50 rounded-2xl p-8 border-2 border-zunkiree-200 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300" data-reveal>
+        <span class="inline-flex items-center px-3 py-1 text-xs font-medium bg-zunkiree-600 text-white rounded-full mb-6">
+          Primary Product
+        </span>
+        <div class="w-14 h-14 bg-zunkiree-600 rounded-xl flex items-center justify-center text-white mb-6">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-medium text-warm-black tracking-[-0.02em] mb-3">Zunkiree Search</h3>
+        <p class="text-warm-700 leading-relaxed mb-6">AI-native search and interaction module for modern, data-driven platforms. Transform how users find and engage with information.</p>
+        <a href="/contact/" class="inline-flex items-center gap-1 text-zunkiree-700 font-medium hover:gap-2 transition-all duration-200">
           Learn more <span>&rarr;</span>
         </a>
       </div>
-    </div>
-  </div>
-</section>
 
-{# =====================================================
-   SECTION 4: STATS (Duna-style) - HIDDEN: Uncomment when content is ready
-   ===================================================== #}
-{#
-<section class="py-16 md:py-24 bg-warm-off-white">
-  <div class="max-w-[1200px] mx-auto px-5 md:px-10">
-    <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-      <div class="text-center" data-reveal>
-        <div class="text-4xl md:text-5xl font-medium text-warm-black tracking-[-0.03em] mb-2">
-          <span data-counter="50" data-suffix="+">0</span>
+      {# Product 2: Gaamma #}
+      <div class="group bg-white rounded-2xl p-8 border border-warm-border hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300" data-reveal>
+        <div class="w-14 h-14 bg-warm-surface rounded-xl flex items-center justify-center text-warm-charcoal mb-6 group-hover:bg-warm-charcoal group-hover:text-white transition-colors duration-300">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+          </svg>
         </div>
-        <p class="text-warm-600 font-medium">Projects Delivered</p>
-      </div>
-      <div class="text-center" data-reveal>
-        <div class="text-4xl md:text-5xl font-medium text-warm-black tracking-[-0.03em] mb-2">
-          <span data-counter="98" data-suffix="%">0</span>
-        </div>
-        <p class="text-warm-600 font-medium">Client Satisfaction</p>
-      </div>
-      <div class="text-center" data-reveal>
-        <div class="text-4xl md:text-5xl font-medium text-warm-black tracking-[-0.03em] mb-2">
-          <span data-counter="5" data-suffix="+">0</span>
-        </div>
-        <p class="text-warm-600 font-medium">Years Experience</p>
-      </div>
-      <div class="text-center" data-reveal>
-        <div class="text-4xl md:text-5xl font-medium text-warm-black tracking-[-0.03em] mb-2">
-          <span data-counter="24" data-suffix="/7">0</span>
-        </div>
-        <p class="text-warm-600 font-medium">Support Available</p>
-      </div>
-    </div>
-  </div>
-</section>
-#}
-
-{# =====================================================
-   SECTION 5: PROJECTS (Duna-style)
-   ===================================================== #}
-<section class="py-16 md:py-24 lg:py-32">
-  <div class="max-w-[1200px] mx-auto px-5 md:px-10">
-    {# Section Header #}
-    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16" data-reveal>
-      <div class="max-w-xl">
-        <p class="text-sm font-medium text-warm-400 tracking-wide mb-4">Our Work</p>
-        <h2 class="text-3xl md:text-4xl lg:text-[44px] font-medium text-warm-black tracking-[-0.03em] leading-[1.2] mb-5">
-          Featured projects
-        </h2>
-        <p class="text-lg text-warm-600 tracking-[-0.01em] leading-relaxed">
-          Explore some of our recent work that showcases our expertise and creativity.
-        </p>
-      </div>
-      <a href="/projects/" class="inline-flex items-center gap-2 px-5 py-2.5 border border-warm-border text-warm-charcoal font-medium rounded-full hover:border-warm-charcoal hover:bg-warm-off-white transition-all duration-200">
-        View All Projects
-        <span>&rarr;</span>
-      </a>
-    </div>
-
-    {# Projects Grid #}
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-      {# Project 1 #}
-      <div class="group relative overflow-hidden rounded-2xl bg-warm-surface aspect-[4/3] hover:shadow-lg transition-all duration-300" data-reveal>
-        <div class="absolute inset-0 bg-gradient-to-br from-warm-charcoal/80 to-warm-black/90"></div>
-        <div class="absolute inset-0 p-8 flex flex-col justify-end">
-          <span class="text-xs font-medium text-white/60 uppercase tracking-wider mb-2">Healthcare</span>
-          <h3 class="text-2xl font-medium text-white tracking-[-0.02em] mb-2">Avantra</h3>
-          <p class="text-white/70 mb-4 leading-relaxed">AI-powered dental clinic management system with advanced analytics.</p>
-          <a href="/projects/avantra/" class="inline-flex items-center gap-1 text-white text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-            View Project <span>&rarr;</span>
-          </a>
-        </div>
+        <h3 class="text-xl font-medium text-warm-black tracking-[-0.02em] mb-3">Gaamma</h3>
+        <p class="text-warm-600 leading-relaxed mb-6">Full-scale manufacturing ERP platform focused on operational efficiency and digital transformation for production environments.</p>
+        <a href="/contact/" class="inline-flex items-center gap-1 text-warm-charcoal font-medium hover:gap-2 transition-all duration-200">
+          Learn more <span>&rarr;</span>
+        </a>
       </div>
 
-      {# Project 2 #}
-      <div class="group relative overflow-hidden rounded-2xl bg-warm-surface aspect-[4/3] hover:shadow-lg transition-all duration-300" data-reveal>
-        <div class="absolute inset-0 bg-gradient-to-br from-warm-charcoal/80 to-warm-black/90"></div>
-        <div class="absolute inset-0 p-8 flex flex-col justify-end">
-          <span class="text-xs font-medium text-white/60 uppercase tracking-wider mb-2">SaaS</span>
-          <h3 class="text-2xl font-medium text-white tracking-[-0.02em] mb-2">BlueShark</h3>
-          <p class="text-white/70 mb-4 leading-relaxed">Production management system for manufacturing operations.</p>
-          <a href="/projects/blueshark/" class="inline-flex items-center gap-1 text-white text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity">
-            View Project <span>&rarr;</span>
-          </a>
+      {# Product 3: Dental AI Assistant (Coming Soon) #}
+      <div class="group bg-white rounded-2xl p-8 border border-warm-border hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300" data-reveal>
+        <span class="inline-flex items-center px-3 py-1 text-xs font-medium bg-warm-surface text-warm-600 rounded-full mb-6">
+          Coming Soon
+        </span>
+        <div class="w-14 h-14 bg-warm-surface rounded-xl flex items-center justify-center text-warm-charcoal mb-6 group-hover:bg-warm-charcoal group-hover:text-white transition-colors duration-300">
+          <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+          </svg>
         </div>
+        <h3 class="text-xl font-medium text-warm-black tracking-[-0.02em] mb-3">Dental AI Assistant</h3>
+        <p class="text-warm-600 leading-relaxed mb-6">Upcoming AI assistant designed for dental operations and customer interaction. Part of our long-term vertical AI roadmap.</p>
+        <span class="inline-flex items-center gap-1 text-warm-400 font-medium">
+          In Development
+        </span>
       </div>
     </div>
   </div>
 </section>
 
 {# =====================================================
-   SECTION 6: TESTIMONIALS (Duna-style)
-   ===================================================== #}
-<section class="py-16 md:py-24 lg:py-32 bg-warm-off-white">
-  <div class="max-w-[1200px] mx-auto px-5 md:px-10">
-    {# Section Header #}
-    <div class="text-center max-w-2xl mx-auto mb-16" data-reveal>
-      <p class="text-sm font-medium text-warm-400 tracking-wide mb-4">Testimonials</p>
-      <h2 class="text-3xl md:text-4xl lg:text-[44px] font-medium text-warm-black tracking-[-0.03em] leading-[1.2] mb-5">
-        What our clients say
-      </h2>
-      <p class="text-lg text-warm-600 tracking-[-0.01em] leading-relaxed">
-        Don't just take our word for it. Here's what our clients have to say about working with us.
-      </p>
-    </div>
-
-    {# Testimonials Grid #}
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      {# Testimonial 1 #}
-      <div class="bg-white rounded-2xl p-8 border border-warm-border" data-reveal>
-        <blockquote class="text-warm-charcoal text-lg mb-8 leading-relaxed">
-          "Zunkiree Labs transformed our vision into reality. Their expertise in web development and attention to detail exceeded our expectations."
-        </blockquote>
-        <div class="flex items-center gap-4">
-          <div class="w-12 h-12 bg-warm-surface rounded-full flex items-center justify-center">
-            <span class="text-warm-charcoal font-medium">DW</span>
-          </div>
-          <div>
-            <p class="font-medium text-warm-black">David Wilson</p>
-            <p class="text-sm text-warm-400">CEO, TechStartup</p>
-          </div>
-        </div>
-      </div>
-
-      {# Testimonial 2 #}
-      <div class="bg-white rounded-2xl p-8 border border-warm-border" data-reveal>
-        <blockquote class="text-warm-charcoal text-lg mb-8 leading-relaxed">
-          "The AI solutions they built have streamlined our operations significantly. Highly recommend their team for any tech project."
-        </blockquote>
-        <div class="flex items-center gap-4">
-          <div class="w-12 h-12 bg-warm-surface rounded-full flex items-center justify-center">
-            <span class="text-warm-charcoal font-medium">SJ</span>
-          </div>
-          <div>
-            <p class="font-medium text-warm-black">Sarah Johnson</p>
-            <p class="text-sm text-warm-400">CTO, InnovateCo</p>
-          </div>
-        </div>
-      </div>
-
-      {# Testimonial 3 #}
-      <div class="bg-white rounded-2xl p-8 border border-warm-border" data-reveal>
-        <blockquote class="text-warm-charcoal text-lg mb-8 leading-relaxed">
-          "Professional, responsive, and incredibly skilled. They delivered our mobile app on time and within budget. Outstanding work!"
-        </blockquote>
-        <div class="flex items-center gap-4">
-          <div class="w-12 h-12 bg-warm-surface rounded-full flex items-center justify-center">
-            <span class="text-warm-charcoal font-medium">MR</span>
-          </div>
-          <div>
-            <p class="font-medium text-warm-black">Mike Rodriguez</p>
-            <p class="text-sm text-warm-400">Founder, DigitalFirst</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-{# =====================================================
-   SECTION 7: TEAM (Duna-style) - HIDDEN: Uncomment when content is ready
-   ===================================================== #}
-{#
-<section class="py-16 md:py-24 lg:py-32">
-  <div class="max-w-[1200px] mx-auto px-5 md:px-10">
-    <div class="text-center max-w-2xl mx-auto mb-16" data-reveal>
-      <p class="text-sm font-medium text-warm-400 tracking-wide mb-4">Our Team</p>
-      <h2 class="text-3xl md:text-4xl lg:text-[44px] font-medium text-warm-black tracking-[-0.03em] leading-[1.2] mb-5">
-        Meet the experts
-      </h2>
-      <p class="text-lg text-warm-600 tracking-[-0.01em] leading-relaxed">
-        Our talented team of developers, designers, and strategists ready to bring your vision to life.
-      </p>
-    </div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div class="text-center" data-reveal>
-        <div class="relative mb-6 mx-auto w-32 h-32 rounded-full overflow-hidden bg-warm-surface">
-          <div class="absolute inset-0 bg-warm-charcoal flex items-center justify-center">
-            <span class="text-3xl font-medium text-white">AK</span>
-          </div>
-        </div>
-        <h3 class="text-lg font-medium text-warm-black tracking-[-0.01em] mb-1">Alex Kumar</h3>
-        <p class="text-warm-400 text-sm mb-2">Founder & CEO</p>
-        <p class="text-warm-600 text-sm leading-relaxed">10+ years building digital products for startups and enterprises.</p>
-      </div>
-      <div class="text-center" data-reveal>
-        <div class="relative mb-6 mx-auto w-32 h-32 rounded-full overflow-hidden bg-warm-surface">
-          <div class="absolute inset-0 bg-warm-charcoal flex items-center justify-center">
-            <span class="text-3xl font-medium text-white">SM</span>
-          </div>
-        </div>
-        <h3 class="text-lg font-medium text-warm-black tracking-[-0.01em] mb-1">Sarah Mitchell</h3>
-        <p class="text-warm-400 text-sm mb-2">Lead Designer</p>
-        <p class="text-warm-600 text-sm leading-relaxed">Creating beautiful and intuitive user experiences.</p>
-      </div>
-      <div class="text-center" data-reveal>
-        <div class="relative mb-6 mx-auto w-32 h-32 rounded-full overflow-hidden bg-warm-surface">
-          <div class="absolute inset-0 bg-warm-charcoal flex items-center justify-center">
-            <span class="text-3xl font-medium text-white">JC</span>
-          </div>
-        </div>
-        <h3 class="text-lg font-medium text-warm-black tracking-[-0.01em] mb-1">James Chen</h3>
-        <p class="text-warm-400 text-sm mb-2">Tech Lead</p>
-        <p class="text-warm-600 text-sm leading-relaxed">Full-stack expert specializing in scalable architectures.</p>
-      </div>
-      <div class="text-center" data-reveal>
-        <div class="relative mb-6 mx-auto w-32 h-32 rounded-full overflow-hidden bg-warm-surface">
-          <div class="absolute inset-0 bg-warm-charcoal flex items-center justify-center">
-            <span class="text-3xl font-medium text-white">EP</span>
-          </div>
-        </div>
-        <h3 class="text-lg font-medium text-warm-black tracking-[-0.01em] mb-1">Emma Patel</h3>
-        <p class="text-warm-400 text-sm mb-2">AI Specialist</p>
-        <p class="text-warm-600 text-sm leading-relaxed">Machine learning and AI integration expert.</p>
-      </div>
-    </div>
-  </div>
-</section>
-#}
-
-{# =====================================================
-   SECTION 8: FAQ (Duna-style)
-   ===================================================== #}
-<section class="py-16 md:py-24 lg:py-32 bg-warm-off-white">
-  <div class="max-w-[1200px] mx-auto px-5 md:px-10">
-    <div class="max-w-3xl mx-auto">
-      {# Section Header #}
-      <div class="text-center mb-12" data-reveal>
-        <p class="text-sm font-medium text-warm-400 tracking-wide mb-4">FAQ</p>
-        <h2 class="text-3xl md:text-4xl lg:text-[44px] font-medium text-warm-black tracking-[-0.03em] leading-[1.2]">
-          Frequently asked questions
-        </h2>
-      </div>
-
-      {# FAQ Accordion #}
-      <div class="space-y-3" x-data="{ open: null }">
-        {# FAQ Item 1 #}
-        <div class="bg-white rounded-2xl border border-warm-border overflow-hidden" data-reveal>
-          <button
-            class="w-full flex items-center justify-between p-6 text-left"
-            @click="open = open === 1 ? null : 1"
-          >
-            <span class="text-lg font-medium text-warm-black tracking-[-0.01em]">What services do you offer?</span>
-            <svg class="w-5 h-5 text-warm-400 transition-transform duration-200" :class="{ 'rotate-180': open === 1 }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <div x-show="open === 1" x-collapse>
-            <div class="px-6 pb-6 text-warm-600 leading-relaxed">
-              We offer comprehensive digital solutions including web development, mobile app development, AI/ML integration, UI/UX design, and ongoing maintenance and support. Each project is tailored to meet your specific business needs.
-            </div>
-          </div>
-        </div>
-
-        {# FAQ Item 2 #}
-        <div class="bg-white rounded-2xl border border-warm-border overflow-hidden" data-reveal>
-          <button
-            class="w-full flex items-center justify-between p-6 text-left"
-            @click="open = open === 2 ? null : 2"
-          >
-            <span class="text-lg font-medium text-warm-black tracking-[-0.01em]">How long does a typical project take?</span>
-            <svg class="w-5 h-5 text-warm-400 transition-transform duration-200" :class="{ 'rotate-180': open === 2 }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <div x-show="open === 2" x-collapse>
-            <div class="px-6 pb-6 text-warm-600 leading-relaxed">
-              Project timelines vary based on scope and complexity. Simple websites can be completed in 4-6 weeks, while complex applications may take 3-6 months. We provide detailed timelines during our initial consultation.
-            </div>
-          </div>
-        </div>
-
-        {# FAQ Item 3 #}
-        <div class="bg-white rounded-2xl border border-warm-border overflow-hidden" data-reveal>
-          <button
-            class="w-full flex items-center justify-between p-6 text-left"
-            @click="open = open === 3 ? null : 3"
-          >
-            <span class="text-lg font-medium text-warm-black tracking-[-0.01em]">Do you provide ongoing support?</span>
-            <svg class="w-5 h-5 text-warm-400 transition-transform duration-200" :class="{ 'rotate-180': open === 3 }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <div x-show="open === 3" x-collapse>
-            <div class="px-6 pb-6 text-warm-600 leading-relaxed">
-              Yes, we offer comprehensive maintenance and support packages. This includes bug fixes, security updates, performance monitoring, and feature enhancements to ensure your product stays current and competitive.
-            </div>
-          </div>
-        </div>
-
-        {# FAQ Item 4 #}
-        <div class="bg-white rounded-2xl border border-warm-border overflow-hidden" data-reveal>
-          <button
-            class="w-full flex items-center justify-between p-6 text-left"
-            @click="open = open === 4 ? null : 4"
-          >
-            <span class="text-lg font-medium text-warm-black tracking-[-0.01em]">How do you handle project communication?</span>
-            <svg class="w-5 h-5 text-warm-400 transition-transform duration-200" :class="{ 'rotate-180': open === 4 }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
-            </svg>
-          </button>
-          <div x-show="open === 4" x-collapse>
-            <div class="px-6 pb-6 text-warm-600 leading-relaxed">
-              We maintain transparent communication throughout the project. You'll receive regular updates, have access to project management tools, and have direct contact with your dedicated project manager for any questions or concerns.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-{# =====================================================
-   SECTION 9: CTA (Duna-style)
+   SECTION 9: CTA (Final)
    ===================================================== #}
 <section class="py-20 md:py-28 lg:py-36 bg-warm-rich-black">
   <div class="max-w-[1200px] mx-auto px-5 md:px-10">
     <div class="max-w-2xl mx-auto text-center" data-reveal>
       <h2 class="text-3xl md:text-4xl lg:text-[48px] font-medium text-white tracking-[-0.03em] leading-[1.15] mb-6">
-        Ready to build something amazing?
+        Start a conversation
       </h2>
       <p class="text-lg text-white/60 mb-10 leading-relaxed tracking-[-0.01em]">
-        Let's discuss your project and see how we can help you achieve your goals. No obligations, just a conversation.
+        Whether you're exploring Zunkiree Search, interested in partnerships, or learning more about our platforms, we're open to conversations.
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
         <a href="/contact/" class="inline-flex items-center justify-center gap-2 px-7 py-3.5 bg-zunkiree-600 text-white font-medium rounded-full hover:bg-zunkiree-700 transition-all duration-200 hover:-translate-y-0.5">
-          Start a Conversation
+          Schedule a Demo
           <span>&rarr;</span>
         </a>
         <a href="mailto:{{ site.email }}" class="inline-flex items-center gap-2 text-white/60 hover:text-white font-medium transition-colors">
