@@ -8,21 +8,21 @@ permalink: /
 {# =====================================================
    SECTION 1: HERO (Duna-inspired)
    ===================================================== #}
-<section class="hero-duna relative flex items-center justify-center overflow-hidden bg-[#e8f4f8]" style="min-height: max(100vh, 50vw);">
-  {# Background Image - full image visible, no cropping #}
+<section class="hero-duna relative flex items-center justify-center overflow-hidden bg-[#e8f4f8] min-h-screen">
+  {# Background Image - covers entire hero area on all screen sizes #}
   <div class="hero-bg absolute inset-0">
     <img
       src="/assets/images/hero-bg.webp"
       alt=""
-      class="w-full h-full object-contain object-top"
+      class="w-full h-full object-cover object-[center_30%]"
       loading="eager"
     />
     {# Gradient overlay - fades at bottom for seamless transition to white sections #}
-    <div class="absolute inset-0 bg-gradient-to-b from-transparent from-70% to-white"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent from-60% via-white/70 via-85% to-white"></div>
   </div>
 
-  {# Content - vertically centered in hero #}
-  <div class="relative z-10 max-w-[1200px] mx-auto px-5 md:px-10 text-center pt-[72px]">
+  {# Content - vertically centered in hero with proper padding #}
+  <div class="relative z-10 max-w-[1200px] mx-auto px-5 md:px-10 text-center pt-24 pb-16 md:pt-[72px] md:pb-24">
     {# Headline - Duna style with tight letter-spacing #}
     <h1 class="hero-headline text-[40px] sm:text-[52px] md:text-[64px] lg:text-[72px] font-medium text-black tracking-[-0.04em] leading-[1.1] mb-6" data-reveal>
       AI-native search and interaction<br>
