@@ -120,30 +120,34 @@ permalink: /
         </div>
       </div>
 
-      {# Card 3: Testimonial Card (Wide) #}
-      <div class="col-span-2 md:col-span-2 bg-warm-charcoal rounded-2xl p-6 flex flex-col justify-between min-h-[130px] md:min-h-[160px]">
-        <div class="flex items-start justify-between mb-4">
+      {# Card 3: Testimonial Card (Wide) with Lake Background #}
+      <div class="col-span-2 md:col-span-2 rounded-2xl p-6 flex flex-col justify-between min-h-[130px] md:min-h-[160px] relative overflow-hidden" style="background-image: url('/assets/images/testimonial-bg-lake.jpg'); background-size: cover; background-position: center;">
+        {# Dark overlay for text readability #}
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10 flex items-start justify-between mb-4">
           <div>
             <p class="text-white font-medium text-sm">Sarah Chen</p>
             <p class="text-white/60 text-xs">VP Engineering, ScaleUp</p>
           </div>
           <span class="text-white/80 font-semibold text-sm">ScaleUp</span>
         </div>
-        <p class="text-white/90 text-sm md:text-base leading-relaxed">
+        <p class="relative z-10 text-white/90 text-sm md:text-base leading-relaxed">
           "Implementing Zunkiree Search transformed how our users discover content. What used to take months of engineering now works out of the box."
         </p>
       </div>
 
-      {# Card 4: Testimonial Card (Wide + Tall) #}
-      <div class="col-span-2 row-span-2 bg-warm-rich-black rounded-2xl p-6 flex flex-col justify-between min-h-[280px]">
-        <div class="flex items-start justify-between mb-4">
+      {# Card 4: Testimonial Card (Wide + Tall) with Mountain Background #}
+      <div class="col-span-2 row-span-2 rounded-2xl p-6 flex flex-col justify-between min-h-[280px] relative overflow-hidden" style="background-image: url('/assets/images/testimonial-bg-mountains.jpg'); background-size: cover; background-position: center;">
+        {# Dark overlay for text readability #}
+        <div class="absolute inset-0 bg-black/50"></div>
+        <div class="relative z-10 flex items-start justify-between mb-4">
           <div>
             <p class="text-white font-medium">Marcus Rivera</p>
             <p class="text-white/60 text-sm">CTO, InnovateCo</p>
           </div>
           <span class="text-white font-bold tracking-tight">innovate</span>
         </div>
-        <p class="text-white/90 text-base md:text-lg leading-relaxed">
+        <p class="relative z-10 text-white/90 text-base md:text-lg leading-relaxed">
           "Zunkiree's AI-native approach is exceptional. I wish a platform like this existed when we were scaling our search infrastructure. It would have saved us years of engineering effort."
         </p>
       </div>
