@@ -8,7 +8,7 @@ permalink: /
 {# =====================================================
    SECTION 1: HERO (Duna-inspired)
    ===================================================== #}
-<section class="hero-duna relative flex items-center justify-center overflow-hidden bg-[#e8f4f8] min-h-screen">
+<section class="hero-duna relative flex items-center justify-center overflow-hidden bg-[#e8f4f8] min-h-screen px-4 md:px-6">
   {# Background Image - covers entire hero area on all screen sizes #}
   <div class="hero-bg absolute inset-0">
     <img
@@ -22,7 +22,7 @@ permalink: /
   </div>
 
   {# Content - vertically centered in hero #}
-  <div class="relative z-10 max-w-[1200px] mx-auto px-5 md:px-10 text-center mt-16">
+  <div class="relative z-10 max-w-[1200px] mx-auto text-center mt-16">
     {# Headline - Duna style with tight letter-spacing #}
     <h1 class="hero-headline text-[40px] sm:text-[52px] md:text-[64px] lg:text-[72px] font-medium text-black tracking-[-0.04em] leading-[1.1] mb-6" data-reveal>
       AI-native search and interaction<br>
@@ -50,11 +50,11 @@ permalink: /
    SECTION 2: CLIENTS / PARTNERS (Marquee style)
    Full-width auto-scrolling logo strip
    ===================================================== #}
-<section class="relative py-16 md:py-20 bg-gradient-to-b from-white/80 via-white to-white backdrop-blur-sm">
+<section class="relative py-16 md:py-20 bg-gradient-to-b from-white/80 via-white to-white backdrop-blur-sm px-4 md:px-6">
   {# Subtle top fade for extra smoothness #}
   <div class="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-white/50 to-transparent pointer-events-none"></div>
 
-  <div class="max-w-[1200px] mx-auto px-5 md:px-10">
+  <div class="max-w-[1200px] mx-auto">
     <p class="text-center text-sm font-medium text-warm-400 tracking-wide mb-10">Trusted by forward-thinking companies</p>
 
     {# Marquee container - aligned with content width #}
@@ -88,8 +88,8 @@ permalink: /
 {# =====================================================
    SECTION: TRUSTED BY LEADERS (Bento Grid Testimonials)
    ===================================================== #}
-<section class="py-16 md:py-24 bg-white">
-  <div class="max-w-[1200px] mx-auto px-5 md:px-10">
+<section class="py-16 md:py-24 bg-white px-4 md:px-6">
+  <div class="max-w-[1200px] mx-auto">
     {# Section Header #}
     <div class="text-center max-w-2xl mx-auto mb-12" data-reveal>
       <h2 class="text-3xl md:text-4xl lg:text-[44px] font-medium text-warm-black tracking-[-0.03em] leading-[1.2] mb-4">
@@ -180,8 +180,8 @@ permalink: /
 {# =====================================================
    SECTION 3: VALUE PROPOSITION (Built around one core idea)
    ===================================================== #}
-<section class="py-16 md:py-24 lg:py-32">
-  <div class="max-w-[1200px] mx-auto px-5 md:px-10">
+<section class="py-16 md:py-24 lg:py-32 px-4 md:px-6">
+  <div class="max-w-[1200px] mx-auto">
     {# Section Header - Centered #}
     <div class="text-center max-w-3xl mx-auto mb-16" data-reveal>
       <p class="text-sm font-medium text-warm-400 tracking-wide mb-4">Our Philosophy</p>
@@ -234,8 +234,8 @@ permalink: /
 {# =====================================================
    SECTION 4: STATS (Duna-style)
    ===================================================== #}
-<section class="py-10 md:py-14 bg-white">
-  <div class="max-w-[1200px] mx-auto px-5 md:px-10">
+<section class="py-10 md:py-14 bg-white px-4 md:px-6">
+  <div class="max-w-[1200px] mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
       <div class="text-center" data-reveal>
         <div class="text-5xl md:text-6xl font-medium text-warm-black tracking-[-0.03em] mb-2">
@@ -262,26 +262,28 @@ permalink: /
 {# =====================================================
    SECTION 5: ZUNKIREE SEARCH FEATURE (Professional Tabbed Interface)
    ===================================================== #}
-<section class="py-20 md:py-28 lg:py-36 bg-gradient-to-b from-white via-warm-off-white to-warm-off-white relative overflow-hidden" x-data="{ activeTab: 1 }">
+<section class="py-20 md:py-28 lg:py-36 bg-gradient-to-b from-white via-warm-off-white to-warm-off-white relative overflow-hidden px-4 md:px-6" x-data="{ activeTab: 1 }">
   {# Subtle background pattern #}
   <div class="absolute inset-0 opacity-[0.015]" style="background-image: url('data:image/svg+xml,%3Csvg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;%3E%3Cg fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;%3E%3Cg fill=&quot;%23000000&quot; fill-opacity=&quot;1&quot;%3E%3Cpath d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
 
-  <div class="max-w-[1200px] mx-auto px-5 md:px-10 relative">
-    {# Section Header - Enhanced #}
-    <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-6 mb-14 md:mb-16" data-reveal>
+  <div class="max-w-[1200px] mx-auto relative">
+    {# Outer Container - Wrapping Header + Content #}
+    <div class="bg-[rgb(27,49,57)] rounded-3xl p-6 md:p-8 lg:p-10" data-reveal>
+      {# Section Header - Enhanced #}
+      <div class="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-6 mb-8 md:mb-10">
       <div class="max-w-xl">
         <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-zunkiree-50 rounded-full mb-4">
           <span class="w-1.5 h-1.5 bg-zunkiree-600 rounded-full animate-pulse"></span>
           <span class="text-xs font-semibold text-zunkiree-700 tracking-wide uppercase">Flagship Product</span>
         </div>
-        <h2 class="text-3xl md:text-4xl lg:text-[48px] font-semibold text-warm-black tracking-[-0.03em] leading-[1.1] mb-4">
+        <h2 class="text-3xl md:text-4xl lg:text-[48px] font-semibold text-white tracking-[-0.03em] leading-[1.1] mb-4">
           Zunkiree Search
         </h2>
-        <p class="text-lg md:text-xl text-warm-600 tracking-[-0.01em] leading-relaxed">
+        <p class="text-lg md:text-xl text-white/70 tracking-[-0.01em] leading-relaxed">
           The AI-native interaction layer for modern platforms
         </p>
       </div>
-      <a href="/products/search/" class="group inline-flex items-center gap-2 px-6 py-3 bg-white border border-warm-200 rounded-full text-warm-700 font-medium hover:border-zunkiree-200 hover:bg-zunkiree-50 transition-all duration-300 shadow-sm">
+      <a href="/products/search/" class="group inline-flex items-center gap-2 px-6 py-3 bg-transparent border border-white/30 rounded-full text-white font-medium hover:border-white/60 hover:bg-white/10 transition-all duration-300">
         Explore Product
         <svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
@@ -289,22 +291,22 @@ permalink: /
       </a>
     </div>
 
-    {# Main Content - Card Container #}
-    <div class="bg-white rounded-3xl shadow-xl shadow-warm-900/5 border border-warm-100 overflow-hidden" data-reveal>
-      <div class="grid grid-cols-1 lg:grid-cols-12">
+    {# Main Content - No inner box, content flows in outer container #}
+    <div class="overflow-hidden">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
         {# Left: Feature Tabs #}
-        <div class="lg:col-span-5 p-6 md:p-8 lg:p-10 bg-gradient-to-br from-warm-50/50 to-white border-b lg:border-b-0 lg:border-r border-warm-100">
+        <div class="lg:col-span-5">
           <div class="space-y-2">
             {# Tab 1: Reduce Friction #}
             <button
               @click="activeTab = 1"
               class="w-full text-left p-4 md:p-5 rounded-2xl transition-all duration-300 group relative overflow-hidden"
-              :class="activeTab === 1 ? 'bg-white shadow-lg shadow-warm-900/5 border border-warm-100' : 'hover:bg-white/60'"
+              :class="activeTab === 1 ? 'bg-[rgb(40,65,75)] border border-white/10' : 'hover:bg-white/5'"
             >
               <div class="flex items-start gap-4 relative z-10">
                 <div
                   class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300"
-                  :class="activeTab === 1 ? 'bg-zunkiree-600 text-white shadow-lg shadow-zunkiree-600/30' : 'bg-warm-100 text-warm-500 group-hover:bg-warm-200'"
+                  :class="activeTab === 1 ? 'bg-zunkiree-600 text-white shadow-lg shadow-zunkiree-600/30' : 'bg-white/10 text-white/60 group-hover:bg-white/20'"
                 >
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
@@ -312,9 +314,9 @@ permalink: /
                 </div>
                 <div class="flex-1 min-w-0">
                   <div class="flex items-center gap-2">
-                    <span class="font-semibold text-warm-900 text-[15px]">Reduce friction</span>
+                    <span class="font-semibold text-white text-[15px]">Reduce friction</span>
                     <svg
-                      class="w-4 h-4 text-zunkiree-600 transition-all duration-300"
+                      class="w-4 h-4 text-zunkiree-500 transition-all duration-300"
                       :class="activeTab === 1 ? 'opacity-100' : 'opacity-0'"
                       fill="currentColor" viewBox="0 0 20 20"
                     >
@@ -322,7 +324,7 @@ permalink: /
                     </svg>
                   </div>
                   <p
-                    class="text-warm-600 text-sm mt-2 leading-relaxed overflow-hidden transition-all duration-300"
+                    class="text-white/70 text-sm mt-2 leading-relaxed overflow-hidden transition-all duration-300"
                     :class="activeTab === 1 ? 'max-h-24 opacity-100' : 'max-h-0 opacity-0'"
                   >
                     Natural language queries replace complex filters. Users find what they need instantly.
@@ -335,12 +337,12 @@ permalink: /
             <button
               @click="activeTab = 2"
               class="w-full text-left p-4 md:p-5 rounded-2xl transition-all duration-300 group relative overflow-hidden"
-              :class="activeTab === 2 ? 'bg-white shadow-lg shadow-warm-900/5 border border-warm-100' : 'hover:bg-white/60'"
+              :class="activeTab === 2 ? 'bg-[rgb(40,65,75)] border border-white/10' : 'hover:bg-white/5'"
             >
               <div class="flex items-start gap-4 relative z-10">
                 <div
                   class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300"
-                  :class="activeTab === 2 ? 'bg-zunkiree-600 text-white shadow-lg shadow-zunkiree-600/30' : 'bg-warm-100 text-warm-500 group-hover:bg-warm-200'"
+                  :class="activeTab === 2 ? 'bg-zunkiree-600 text-white shadow-lg shadow-zunkiree-600/30' : 'bg-white/10 text-white/60 group-hover:bg-white/20'"
                 >
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
@@ -348,9 +350,9 @@ permalink: /
                 </div>
                 <div class="flex-1 min-w-0">
                   <div class="flex items-center gap-2">
-                    <span class="font-semibold text-warm-900 text-[15px]">Complex to conversational</span>
+                    <span class="font-semibold text-white text-[15px]">Complex to conversational</span>
                     <svg
-                      class="w-4 h-4 text-zunkiree-600 transition-all duration-300"
+                      class="w-4 h-4 text-zunkiree-500 transition-all duration-300"
                       :class="activeTab === 2 ? 'opacity-100' : 'opacity-0'"
                       fill="currentColor" viewBox="0 0 20 20"
                     >
@@ -358,7 +360,7 @@ permalink: /
                     </svg>
                   </div>
                   <p
-                    class="text-warm-600 text-sm mt-2 leading-relaxed overflow-hidden transition-all duration-300"
+                    class="text-white/70 text-sm mt-2 leading-relaxed overflow-hidden transition-all duration-300"
                     :class="activeTab === 2 ? 'max-h-24 opacity-100' : 'max-h-0 opacity-0'"
                   >
                     Transform structured data into accessible dialogue with contextual answers.
@@ -371,12 +373,12 @@ permalink: /
             <button
               @click="activeTab = 3"
               class="w-full text-left p-4 md:p-5 rounded-2xl transition-all duration-300 group relative overflow-hidden"
-              :class="activeTab === 3 ? 'bg-white shadow-lg shadow-warm-900/5 border border-warm-100' : 'hover:bg-white/60'"
+              :class="activeTab === 3 ? 'bg-[rgb(40,65,75)] border border-white/10' : 'hover:bg-white/5'"
             >
               <div class="flex items-start gap-4 relative z-10">
                 <div
                   class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300"
-                  :class="activeTab === 3 ? 'bg-zunkiree-600 text-white shadow-lg shadow-zunkiree-600/30' : 'bg-warm-100 text-warm-500 group-hover:bg-warm-200'"
+                  :class="activeTab === 3 ? 'bg-zunkiree-600 text-white shadow-lg shadow-zunkiree-600/30' : 'bg-white/10 text-white/60 group-hover:bg-white/20'"
                 >
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
@@ -384,9 +386,9 @@ permalink: /
                 </div>
                 <div class="flex-1 min-w-0">
                   <div class="flex items-center gap-2">
-                    <span class="font-semibold text-warm-900 text-[15px]">Improve engagement</span>
+                    <span class="font-semibold text-white text-[15px]">Improve engagement</span>
                     <svg
-                      class="w-4 h-4 text-zunkiree-600 transition-all duration-300"
+                      class="w-4 h-4 text-zunkiree-500 transition-all duration-300"
                       :class="activeTab === 3 ? 'opacity-100' : 'opacity-0'"
                       fill="currentColor" viewBox="0 0 20 20"
                     >
@@ -394,7 +396,7 @@ permalink: /
                     </svg>
                   </div>
                   <p
-                    class="text-warm-600 text-sm mt-2 leading-relaxed overflow-hidden transition-all duration-300"
+                    class="text-white/70 text-sm mt-2 leading-relaxed overflow-hidden transition-all duration-300"
                     :class="activeTab === 3 ? 'max-h-24 opacity-100' : 'max-h-0 opacity-0'"
                   >
                     Increase time-on-site and reduce support queries with instant answers.
@@ -407,12 +409,12 @@ permalink: /
             <button
               @click="activeTab = 4"
               class="w-full text-left p-4 md:p-5 rounded-2xl transition-all duration-300 group relative overflow-hidden"
-              :class="activeTab === 4 ? 'bg-white shadow-lg shadow-warm-900/5 border border-warm-100' : 'hover:bg-white/60'"
+              :class="activeTab === 4 ? 'bg-[rgb(40,65,75)] border border-white/10' : 'hover:bg-white/5'"
             >
               <div class="flex items-start gap-4 relative z-10">
                 <div
                   class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 transition-all duration-300"
-                  :class="activeTab === 4 ? 'bg-zunkiree-600 text-white shadow-lg shadow-zunkiree-600/30' : 'bg-warm-100 text-warm-500 group-hover:bg-warm-200'"
+                  :class="activeTab === 4 ? 'bg-zunkiree-600 text-white shadow-lg shadow-zunkiree-600/30' : 'bg-white/10 text-white/60 group-hover:bg-white/20'"
                 >
                   <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
@@ -420,9 +422,9 @@ permalink: /
                 </div>
                 <div class="flex-1 min-w-0">
                   <div class="flex items-center gap-2">
-                    <span class="font-semibold text-warm-900 text-[15px]">Scale intelligently</span>
+                    <span class="font-semibold text-white text-[15px]">Scale intelligently</span>
                     <svg
-                      class="w-4 h-4 text-zunkiree-600 transition-all duration-300"
+                      class="w-4 h-4 text-zunkiree-500 transition-all duration-300"
                       :class="activeTab === 4 ? 'opacity-100' : 'opacity-0'"
                       fill="currentColor" viewBox="0 0 20 20"
                     >
@@ -430,7 +432,7 @@ permalink: /
                     </svg>
                   </div>
                   <p
-                    class="text-warm-600 text-sm mt-2 leading-relaxed overflow-hidden transition-all duration-300"
+                    class="text-white/70 text-sm mt-2 leading-relaxed overflow-hidden transition-all duration-300"
                     :class="activeTab === 4 ? 'max-h-24 opacity-100' : 'max-h-0 opacity-0'"
                   >
                     Built for enterprise-scale workloads. Handle millions of queries effortlessly.
@@ -441,7 +443,7 @@ permalink: /
           </div>
 
           {# CTA Button - Prominent #}
-          <div class="mt-6 pt-6 border-t border-warm-200">
+          <div class="mt-6 pt-6 border-t border-white/20">
             <a href="/contact/" class="group flex items-center justify-center gap-3 w-full px-6 py-4 bg-zunkiree-600 text-white font-semibold rounded-2xl hover:bg-zunkiree-700 transition-all duration-300 shadow-lg shadow-zunkiree-600/30 hover:shadow-xl hover:shadow-zunkiree-600/40 hover:-translate-y-0.5">
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
@@ -451,31 +453,18 @@ permalink: /
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
               </svg>
             </a>
-            <p class="text-center text-warm-500 text-xs mt-3">Free consultation - No commitment required</p>
+            <p class="text-center text-white/50 text-xs mt-3">Free consultation - No commitment required</p>
           </div>
         </div>
 
         {# Right: Preview Cards - Enhanced with decorative background #}
         <div class="lg:col-span-7 relative min-h-[420px] md:min-h-[520px] overflow-hidden">
-          {# Decorative Background Layer #}
-          <div class="absolute inset-0 bg-gradient-to-br from-slate-50 via-gray-50 to-slate-100">
-            {# Gradient Orbs #}
-            <div class="absolute top-10 right-10 w-64 h-64 bg-zunkiree-500/10 rounded-full blur-3xl"></div>
-            <div class="absolute bottom-10 left-10 w-48 h-48 bg-blue-500/10 rounded-full blur-3xl"></div>
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl"></div>
-            {# Grid Pattern #}
-            <div class="absolute inset-0 opacity-[0.03]" style="background-image: linear-gradient(rgba(0,0,0,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.1) 1px, transparent 1px); background-size: 40px 40px;"></div>
-            {# Decorative Dots #}
-            <div class="absolute top-8 left-8 flex gap-1.5">
-              <div class="w-2 h-2 rounded-full bg-zunkiree-300"></div>
-              <div class="w-2 h-2 rounded-full bg-warm-300"></div>
-              <div class="w-2 h-2 rounded-full bg-slate-300"></div>
-            </div>
-            <div class="absolute bottom-8 right-8 flex gap-1.5">
-              <div class="w-2 h-2 rounded-full bg-slate-300"></div>
-              <div class="w-2 h-2 rounded-full bg-warm-300"></div>
-              <div class="w-2 h-2 rounded-full bg-zunkiree-300"></div>
-            </div>
+          {# Decorative Background Layer - Transparent with gradient orbs #}
+          <div class="absolute inset-0">
+            {# Gradient Orbs - Keep for visual interest #}
+            <div class="absolute top-10 right-10 w-64 h-64 bg-zunkiree-500/20 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-10 left-10 w-48 h-48 bg-blue-500/15 rounded-full blur-3xl"></div>
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl"></div>
           </div>
 
           {# Card 1: Interactive Search Demo - AI Answer Style #}
@@ -546,18 +535,18 @@ permalink: /
             <div class="flex-1 flex flex-col items-center justify-start relative z-10 pt-2">
               {# Search Widget Container #}
               <div class="w-full max-w-lg">
-                {# Search Bar #}
-                <div class="bg-white rounded-2xl shadow-xl shadow-warm-900/10 border border-warm-200">
+                {# Search Bar - Frosted Glass Style #}
+                <div class="bg-white/10 backdrop-blur-xl rounded-2xl border border-white/20">
                   <div class="flex items-center gap-3 p-2 pl-5">
-                    <svg class="w-5 h-5 text-warm-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 text-white/40 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
                     </svg>
                     <div class="flex-1 py-2 min-h-[28px]">
-                      <span class="text-warm-800 text-[15px]" x-text="searchText"></span>
-                      <span x-show="!searchText && !isTypingQuery" class="text-warm-400 text-[15px]">Ask a question...</span>
-                      <span x-show="isTypingQuery" class="inline-block w-0.5 h-5 bg-blue-500 animate-pulse align-middle"></span>
+                      <span class="text-white text-[15px]" x-text="searchText"></span>
+                      <span x-show="!searchText && !isTypingQuery" class="text-white/40 text-[15px]">Ask a question...</span>
+                      <span x-show="isTypingQuery" class="inline-block w-0.5 h-5 bg-blue-400 animate-pulse align-middle"></span>
                     </div>
-                    <button class="px-5 py-2.5 bg-blue-400 hover:bg-blue-500 text-white font-medium rounded-xl flex items-center gap-2 transition-colors">
+                    <button class="px-5 py-2.5 bg-blue-500/80 hover:bg-blue-500 text-white font-medium rounded-xl flex items-center gap-2 transition-colors">
                       Search
                       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -568,24 +557,24 @@ permalink: /
 
                 {# Powered by badge #}
                 <div class="flex items-center justify-center gap-2 mt-3">
-                  <span class="text-amber-500 text-sm">&#10024;</span>
-                  <span class="text-warm-500 text-sm">Powered by</span>
-                  <span class="text-blue-500 font-semibold text-sm">Zunkiree AI</span>
+                  <span class="text-amber-400 text-sm">&#10024;</span>
+                  <span class="text-white/50 text-sm">Powered by</span>
+                  <span class="text-blue-400 font-semibold text-sm">Zunkiree AI</span>
                 </div>
 
-                {# Answer Card #}
+                {# Answer Card - Frosted Glass Style #}
                 <div
                   x-show="showAnswer"
                   x-transition:enter="transition ease-out duration-300"
                   x-transition:enter-start="opacity-0 translate-y-4"
                   x-transition:enter-end="opacity-100 translate-y-0"
-                  class="mt-4 bg-white rounded-2xl shadow-lg border border-warm-200 overflow-hidden"
+                  class="mt-4 bg-white/10 backdrop-blur-xl rounded-2xl border border-white/20 overflow-hidden"
                 >
                   {# Answer Content #}
                   <div class="px-5 py-4">
-                    <p class="text-warm-700 text-[15px] leading-relaxed">
+                    <p class="text-white/90 text-[15px] leading-relaxed">
                       <span x-text="answerText"></span>
-                      <span x-show="isTypingAnswer" class="inline-block w-0.5 h-4 bg-blue-500 animate-pulse align-middle ml-0.5"></span>
+                      <span x-show="isTypingAnswer" class="inline-block w-0.5 h-4 bg-blue-400 animate-pulse align-middle ml-0.5"></span>
                     </p>
                   </div>
 
@@ -595,21 +584,21 @@ permalink: /
                     x-transition:enter="transition ease-out duration-200"
                     x-transition:enter-start="opacity-0"
                     x-transition:enter-end="opacity-100"
-                    class="border-t border-warm-100 bg-warm-50/50"
+                    class="border-t border-white/10 bg-white/5"
                   >
                     <div class="px-4 py-2 flex items-center gap-2">
-                      <svg class="w-3.5 h-3.5 text-warm-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg class="w-3.5 h-3.5 text-white/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
                       </svg>
-                      <span class="text-warm-500 text-xs font-medium">Sources</span>
+                      <span class="text-white/50 text-xs font-medium">Sources</span>
                     </div>
                     <div class="px-4 pb-3 flex flex-wrap gap-2">
                       <template x-for="(source, index) in sources" :key="index">
-                        <a class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white rounded-lg border border-warm-200 hover:border-blue-300 hover:bg-blue-50 transition-colors cursor-pointer group">
-                          <svg class="w-3.5 h-3.5 text-warm-400 group-hover:text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <a class="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 rounded-lg border border-white/20 hover:border-blue-400/50 hover:bg-white/15 transition-colors cursor-pointer group">
+                          <svg class="w-3.5 h-3.5 text-white/40 group-hover:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                           </svg>
-                          <span class="text-xs text-warm-700 group-hover:text-blue-700" x-text="source.title"></span>
+                          <span class="text-xs text-white/70 group-hover:text-blue-300" x-text="source.title"></span>
                         </a>
                       </template>
                     </div>
@@ -810,18 +799,18 @@ permalink: /
           >
             <div class="flex-1 flex flex-col items-center justify-start relative z-10">
               <div class="w-full max-w-lg">
-                {# Search Bar - Same style as Reduce Friction #}
-                <div class="bg-white rounded-2xl shadow-xl shadow-warm-900/10 border border-warm-200">
+                {# Search Bar - Frosted Glass Style #}
+                <div class="bg-white/10 backdrop-blur-xl rounded-2xl border border-white/20">
                   <div class="flex items-center gap-3 p-2 pl-5">
-                    <svg class="w-5 h-5 text-warm-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-5 h-5 text-white/40 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path>
                     </svg>
                     <div class="flex-1 py-2 min-h-[28px]">
-                      <span class="text-warm-800 text-[15px]" x-text="searchText"></span>
-                      <span x-show="!searchText && !isTypingSearch" class="text-warm-400 text-[15px]">Ask about your data...</span>
-                      <span x-show="isTypingSearch" class="inline-block w-0.5 h-5 bg-blue-500 animate-pulse align-middle"></span>
+                      <span class="text-white text-[15px]" x-text="searchText"></span>
+                      <span x-show="!searchText && !isTypingSearch" class="text-white/40 text-[15px]">Ask about your data...</span>
+                      <span x-show="isTypingSearch" class="inline-block w-0.5 h-5 bg-blue-400 animate-pulse align-middle"></span>
                     </div>
-                    <button class="px-5 py-2.5 bg-blue-400 hover:bg-blue-500 text-white font-medium rounded-xl flex items-center gap-2 transition-colors">
+                    <button class="px-5 py-2.5 bg-blue-500/80 hover:bg-blue-500 text-white font-medium rounded-xl flex items-center gap-2 transition-colors">
                       Search
                       <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -832,18 +821,18 @@ permalink: /
 
                 {# Powered by badge #}
                 <div class="flex items-center justify-center gap-2 mt-3">
-                  <span class="text-amber-500 text-sm">&#10024;</span>
-                  <span class="text-warm-500 text-sm">Powered by</span>
-                  <span class="text-blue-500 font-semibold text-sm">Zunkiree AI</span>
+                  <span class="text-amber-400 text-sm">&#10024;</span>
+                  <span class="text-white/50 text-sm">Powered by</span>
+                  <span class="text-blue-400 font-semibold text-sm">Zunkiree AI</span>
                 </div>
 
-                {# Chat Container - appears after search #}
+                {# Chat Container - Frosted Glass Style #}
                 <div
                   x-show="showChat"
                   x-transition:enter="transition ease-out duration-300"
                   x-transition:enter-start="opacity-0 translate-y-4"
                   x-transition:enter-end="opacity-100 translate-y-0"
-                  class="mt-4 bg-white rounded-2xl shadow-lg border border-warm-200 overflow-hidden"
+                  class="mt-4 bg-white/10 backdrop-blur-xl rounded-2xl border border-white/20 overflow-hidden"
                 >
                   {# Messages Area #}
                   <div class="p-3 space-y-2.5 max-h-[280px] overflow-y-auto scroll-smooth" x-ref="chatArea" x-effect="if($refs.chatArea) $refs.chatArea.scrollTo({ top: $refs.chatArea.scrollHeight, behavior: 'smooth' })">
@@ -861,17 +850,17 @@ permalink: /
                         {# AI Message #}
                         <template x-if="msg.role === 'ai'">
                           <div class="flex justify-start">
-                            <div class="bg-warm-100 rounded-2xl rounded-bl-sm px-3.5 py-2.5 max-w-[92%]">
-                              <p class="text-sm text-warm-800 mb-2" x-text="msg.text"></p>
+                            <div class="bg-white/5 rounded-2xl rounded-bl-sm px-3.5 py-2.5 max-w-[92%]">
+                              <p class="text-sm text-white/90 mb-2" x-text="msg.text"></p>
 
                               {# Summary Data Cards #}
                               <template x-if="msg.data">
                                 <div class="grid grid-cols-3 gap-1.5">
                                   <template x-for="(item, i) in msg.data" :key="i">
-                                    <div class="bg-white rounded-lg p-2 text-center">
-                                      <p class="font-bold text-warm-900 text-sm" x-text="item.value"></p>
-                                      <p class="text-warm-500 text-[9px] leading-tight" x-text="item.label"></p>
-                                      <p class="text-[10px] font-medium" :class="item.up ? 'text-green-600' : 'text-red-500'" x-text="item.change"></p>
+                                    <div class="bg-white/10 rounded-lg p-2 text-center">
+                                      <p class="font-bold text-white text-sm" x-text="item.value"></p>
+                                      <p class="text-white/50 text-[9px] leading-tight" x-text="item.label"></p>
+                                      <p class="text-[10px] font-medium" :class="item.up ? 'text-green-400' : 'text-red-400'" x-text="item.change"></p>
                                     </div>
                                   </template>
                                 </div>
@@ -881,13 +870,13 @@ permalink: /
                               <template x-if="msg.months">
                                 <div class="space-y-1.5">
                                   <template x-for="(item, i) in msg.months" :key="i">
-                                    <div class="bg-white rounded-lg p-2 flex items-center gap-2">
+                                    <div class="bg-white/10 rounded-lg p-2 flex items-center gap-2">
                                       <div class="flex-1">
-                                        <p class="font-medium text-warm-900 text-xs" x-text="item.name"></p>
-                                        <p class="text-warm-500 text-[10px]" x-text="item.orders + ' orders'"></p>
+                                        <p class="font-medium text-white text-xs" x-text="item.name"></p>
+                                        <p class="text-white/50 text-[10px]" x-text="item.orders + ' orders'"></p>
                                       </div>
-                                      <p class="font-semibold text-warm-900 text-xs" x-text="item.revenue"></p>
-                                      <div class="w-12 bg-warm-200 rounded-full h-1.5">
+                                      <p class="font-semibold text-white text-xs" x-text="item.revenue"></p>
+                                      <div class="w-12 bg-white/20 rounded-full h-1.5">
                                         <div class="bg-blue-400 h-1.5 rounded-full" :style="'width: ' + item.percent"></div>
                                       </div>
                                     </div>
@@ -899,13 +888,13 @@ permalink: /
                               <template x-if="msg.products">
                                 <div class="space-y-1.5">
                                   <template x-for="(item, i) in msg.products" :key="i">
-                                    <div class="bg-white rounded-lg p-2 flex items-center gap-2">
-                                      <div class="w-5 h-5 bg-blue-100 rounded flex items-center justify-center text-blue-600 font-bold text-[10px]" x-text="item.rank"></div>
+                                    <div class="bg-white/10 rounded-lg p-2 flex items-center gap-2">
+                                      <div class="w-5 h-5 bg-blue-500/30 rounded flex items-center justify-center text-blue-300 font-bold text-[10px]" x-text="item.rank"></div>
                                       <div class="flex-1 min-w-0">
-                                        <p class="font-medium text-warm-900 text-xs truncate" x-text="item.name"></p>
-                                        <p class="text-warm-500 text-[10px]" x-text="item.units + ' units'"></p>
+                                        <p class="font-medium text-white text-xs truncate" x-text="item.name"></p>
+                                        <p class="text-white/50 text-[10px]" x-text="item.units + ' units'"></p>
                                       </div>
-                                      <p class="font-semibold text-warm-900 text-xs" x-text="item.revenue"></p>
+                                      <p class="font-semibold text-white text-xs" x-text="item.revenue"></p>
                                     </div>
                                   </template>
                                 </div>
@@ -915,14 +904,14 @@ permalink: /
                               <template x-if="msg.comparison">
                                 <div class="space-y-1.5">
                                   <template x-for="(item, i) in msg.comparison" :key="i">
-                                    <div class="bg-white rounded-lg p-2 flex items-center gap-2">
+                                    <div class="bg-white/10 rounded-lg p-2 flex items-center gap-2">
                                       <div class="flex-1">
-                                        <p class="text-warm-500 text-[10px]" x-text="item.metric"></p>
-                                        <p class="font-semibold text-warm-900 text-xs" x-text="item.current"></p>
+                                        <p class="text-white/50 text-[10px]" x-text="item.metric"></p>
+                                        <p class="font-semibold text-white text-xs" x-text="item.current"></p>
                                       </div>
                                       <div class="text-right">
-                                        <p class="text-warm-400 text-[10px]">vs <span x-text="item.previous"></span></p>
-                                        <p class="font-medium text-[10px]" :class="item.up ? 'text-green-600' : 'text-red-500'" x-text="item.change"></p>
+                                        <p class="text-white/40 text-[10px]">vs <span x-text="item.previous"></span></p>
+                                        <p class="font-medium text-[10px]" :class="item.up ? 'text-green-400' : 'text-red-400'" x-text="item.change"></p>
                                       </div>
                                     </div>
                                   </template>
@@ -933,12 +922,12 @@ permalink: /
                               <template x-if="msg.regions">
                                 <div class="space-y-1.5">
                                   <template x-for="(item, i) in msg.regions" :key="i">
-                                    <div class="bg-white rounded-lg p-2 flex items-center gap-2">
+                                    <div class="bg-white/10 rounded-lg p-2 flex items-center gap-2">
                                       <div class="flex-1">
-                                        <p class="font-medium text-warm-900 text-xs" x-text="item.name"></p>
-                                        <p class="text-warm-500 text-[10px]" x-text="item.revenue"></p>
+                                        <p class="font-medium text-white text-xs" x-text="item.name"></p>
+                                        <p class="text-white/50 text-[10px]" x-text="item.revenue"></p>
                                       </div>
-                                      <span class="px-2 py-0.5 bg-green-100 text-green-700 rounded-full text-[10px] font-semibold" x-text="item.growth"></span>
+                                      <span class="px-2 py-0.5 bg-green-500/30 text-green-300 rounded-full text-[10px] font-semibold" x-text="item.growth"></span>
                                     </div>
                                   </template>
                                 </div>
@@ -946,20 +935,20 @@ permalink: /
 
                               {# Sources #}
                               <template x-if="msg.sources">
-                                <div class="mt-2 pt-2 border-t border-warm-200">
+                                <div class="mt-2 pt-2 border-t border-white/10">
                                   <div class="flex items-center gap-1.5 mb-1.5">
-                                    <svg class="w-3 h-3 text-warm-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <svg class="w-3 h-3 text-white/40" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path>
                                     </svg>
-                                    <span class="text-warm-500 text-[10px] font-medium">Sources</span>
+                                    <span class="text-white/50 text-[10px] font-medium">Sources</span>
                                   </div>
                                   <div class="flex flex-wrap gap-1.5">
                                     <template x-for="(source, si) in msg.sources" :key="si">
-                                      <a class="inline-flex items-center gap-1 px-2 py-1 bg-white rounded-md border border-warm-200 hover:border-blue-300 hover:bg-blue-50 transition-colors cursor-pointer group">
-                                        <svg class="w-2.5 h-2.5 text-warm-400 group-hover:text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                      <a class="inline-flex items-center gap-1 px-2 py-1 bg-white/10 rounded-md border border-white/20 hover:border-blue-400/50 hover:bg-white/15 transition-colors cursor-pointer group">
+                                        <svg class="w-2.5 h-2.5 text-white/40 group-hover:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                                         </svg>
-                                        <span class="text-[10px] text-warm-700 group-hover:text-blue-700" x-text="source.title"></span>
+                                        <span class="text-[10px] text-white/70 group-hover:text-blue-300" x-text="source.title"></span>
                                       </a>
                                     </template>
                                   </div>
@@ -983,24 +972,24 @@ permalink: /
 
                     {# AI Typing Indicator #}
                     <div x-show="showTypingIndicator" class="flex justify-start" x-transition>
-                      <div class="bg-warm-100 rounded-2xl rounded-bl-sm px-3.5 py-2.5">
+                      <div class="bg-white/5 rounded-2xl rounded-bl-sm px-3.5 py-2.5">
                         <div class="flex items-center gap-1">
-                          <span class="w-1.5 h-1.5 bg-warm-400 rounded-full animate-bounce" style="animation-delay: 0ms"></span>
-                          <span class="w-1.5 h-1.5 bg-warm-400 rounded-full animate-bounce" style="animation-delay: 150ms"></span>
-                          <span class="w-1.5 h-1.5 bg-warm-400 rounded-full animate-bounce" style="animation-delay: 300ms"></span>
+                          <span class="w-1.5 h-1.5 bg-white/50 rounded-full animate-bounce" style="animation-delay: 0ms"></span>
+                          <span class="w-1.5 h-1.5 bg-white/50 rounded-full animate-bounce" style="animation-delay: 150ms"></span>
+                          <span class="w-1.5 h-1.5 bg-white/50 rounded-full animate-bounce" style="animation-delay: 300ms"></span>
                         </div>
                       </div>
                     </div>
                   </div>
 
                   {# Chat Input Area #}
-                  <div class="px-3 py-2 border-t border-warm-100 bg-warm-50/50">
-                    <div class="flex items-center gap-2 bg-white rounded-lg px-3 py-1.5 border border-warm-200">
+                  <div class="px-3 py-2 border-t border-white/10 bg-white/5">
+                    <div class="flex items-center gap-2 bg-white/10 rounded-lg px-3 py-1.5 border border-white/20">
                       <div class="flex-1 min-h-[24px]">
-                        <span x-show="!isTypingChat && !currentChatText" class="text-warm-400 text-sm">Follow up...</span>
-                        <span x-show="isTypingChat" class="text-warm-800 text-sm" x-text="currentChatText"></span>
+                        <span x-show="!isTypingChat && !currentChatText" class="text-white/40 text-sm">Follow up...</span>
+                        <span x-show="isTypingChat" class="text-white text-sm" x-text="currentChatText"></span>
                       </div>
-                      <button class="p-1.5 bg-blue-400 hover:bg-blue-500 text-white rounded-lg transition-colors">
+                      <button class="p-1.5 bg-blue-500/80 hover:bg-blue-500 text-white rounded-lg transition-colors">
                         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
                         </svg>
@@ -1012,7 +1001,7 @@ permalink: /
             </div>
           </div>
 
-          {# Card 3: Engagement Metrics - Enhanced #}
+          {# Card 3: Trusted AI - Engagement Metrics #}
           <div
             x-show="activeTab === 3"
             x-transition:enter="transition ease-out duration-300"
@@ -1083,47 +1072,47 @@ permalink: /
           >
             <div class="flex-1 flex flex-col justify-center max-w-md mx-auto w-full relative z-10">
               <div class="text-center mb-8">
-                <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-blue-50 rounded-full border border-blue-100 mb-3">
-                  <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 bg-white/10 rounded-full border border-white/10 mb-3">
+                  <svg class="w-4 h-4 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
                   </svg>
-                  <span class="text-xs font-semibold text-blue-700 uppercase tracking-wider">Enterprise Scale</span>
+                  <span class="text-xs font-semibold text-white/80 uppercase tracking-wider">Enterprise Scale</span>
                 </div>
-                <p class="text-warm-500 text-sm">Built for mission-critical workloads</p>
+                <p class="text-white/50 text-sm">Built for mission-critical workloads</p>
               </div>
 
               <div class="space-y-4">
                 <div class="flex items-start gap-4 group">
-                  <div class="w-12 h-12 bg-gradient-to-br from-zunkiree-500 to-zunkiree-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-zunkiree-500/20 group-hover:scale-110 transition-transform">
+                  <div class="w-12 h-12 bg-gradient-to-br from-zunkiree-500 to-zunkiree-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-zunkiree-500/30 group-hover:scale-110 transition-transform">
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                     </svg>
                   </div>
-                  <div class="bg-white rounded-xl p-4 flex-1 shadow-lg shadow-warm-900/5 border border-warm-100 group-hover:shadow-xl group-hover:border-zunkiree-100 transition-all">
-                    <p class="text-warm-900 font-semibold">1M+ queries/day</p>
-                    <p class="text-warm-500 text-sm mt-1">Handled without performance degradation</p>
+                  <div class="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-1 border border-white/10 group-hover:bg-white/10 group-hover:border-white/20 transition-all">
+                    <p class="text-white font-semibold">1M+ queries/day</p>
+                    <p class="text-white/50 text-sm mt-1">Handled without performance degradation</p>
                   </div>
                 </div>
                 <div class="flex items-start gap-4 group">
-                  <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-green-500/20 group-hover:scale-110 transition-transform">
+                  <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-green-500/30 group-hover:scale-110 transition-transform">
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                   </div>
-                  <div class="bg-white rounded-xl p-4 flex-1 shadow-lg shadow-warm-900/5 border border-warm-100 group-hover:shadow-xl group-hover:border-green-100 transition-all">
-                    <p class="text-warm-900 font-semibold">&lt;100ms response time</p>
-                    <p class="text-warm-500 text-sm mt-1">P95 latency across all queries</p>
+                  <div class="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-1 border border-white/10 group-hover:bg-white/10 group-hover:border-white/20 transition-all">
+                    <p class="text-white font-semibold">&lt;100ms response time</p>
+                    <p class="text-white/50 text-sm mt-1">P95 latency across all queries</p>
                   </div>
                 </div>
                 <div class="flex items-start gap-4 group">
-                  <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform">
+                  <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-500/30 group-hover:scale-110 transition-transform">
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
                     </svg>
                   </div>
-                  <div class="bg-white rounded-xl p-4 flex-1 shadow-lg shadow-warm-900/5 border border-warm-100 group-hover:shadow-xl group-hover:border-blue-100 transition-all">
-                    <p class="text-warm-900 font-semibold">Auto-scaling</p>
-                    <p class="text-warm-500 text-sm mt-1">Elastic infrastructure that grows with demand</p>
+                  <div class="bg-white/5 backdrop-blur-sm rounded-xl p-4 flex-1 border border-white/10 group-hover:bg-white/10 group-hover:border-white/20 transition-all">
+                    <p class="text-white font-semibold">Auto-scaling</p>
+                    <p class="text-white/50 text-sm mt-1">Elastic infrastructure that grows with demand</p>
                   </div>
                 </div>
               </div>
@@ -1132,14 +1121,15 @@ permalink: /
         </div>
       </div>
     </div>
+    </div>{# Close Outer Container #}
   </div>
 </section>
 
 {# =====================================================
    SECTION 6: PLATFORM ARCHITECTURE DIAGRAM
    ===================================================== #}
-<section class="py-16 md:py-24 lg:py-32">
-  <div class="max-w-[1200px] mx-auto px-5 md:px-10">
+<section class="py-16 md:py-24 lg:py-32 px-4 md:px-6">
+  <div class="max-w-[1200px] mx-auto">
     {# Section Header #}
     <div class="text-center max-w-2xl mx-auto mb-16" data-reveal>
       <p class="text-sm font-medium text-warm-400 tracking-wide mb-4">Platform Architecture</p>
@@ -1148,8 +1138,136 @@ permalink: /
       </h2>
     </div>
 
-    {# Architecture Diagram #}
-    <div class="relative" data-reveal id="architecture-diagram">
+    {# ==================== MOBILE LAYOUT (Vertical 2x2 Grid) - Shows below md ==================== #}
+    <div class="relative md:hidden" data-reveal id="architecture-diagram-mobile">
+      <div class="flex flex-col items-center max-w-md mx-auto">
+
+        {# Data Sources Section #}
+        <h3 class="text-lg font-medium text-warm-black text-center mb-6">Data Sources</h3>
+
+        {# 2x2 Grid for Data Sources #}
+        <div class="grid grid-cols-2 gap-3 w-full mb-4 relative z-10" id="data-sources-grid-mobile">
+          <div class="bg-warm-surface rounded-xl p-3 flex items-center gap-2 relative" data-connector-mobile="source-1">
+            <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-4 h-4 text-warm-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4"></path>
+              </svg>
+            </div>
+            <span class="text-warm-700 font-medium text-sm">Databases</span>
+          </div>
+          <div class="bg-warm-surface rounded-xl p-3 flex items-center gap-2 relative" data-connector-mobile="source-2">
+            <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-4 h-4 text-warm-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <span class="text-warm-700 font-medium text-sm">APIs</span>
+          </div>
+          <div class="bg-warm-surface rounded-xl p-3 flex items-center gap-2 relative" data-connector-mobile="source-3">
+            <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-4 h-4 text-warm-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+              </svg>
+            </div>
+            <span class="text-warm-700 font-medium text-sm">Documents</span>
+          </div>
+          <div class="bg-warm-surface rounded-xl p-3 flex items-center gap-2 relative" data-connector-mobile="source-4">
+            <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-4 h-4 text-warm-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <span class="text-warm-700 font-medium text-sm">Feeds</span>
+          </div>
+        </div>
+
+        {# Convergence Point #}
+        <div class="relative w-full flex justify-center" style="height: 60px;">
+          <div id="convergence-point-mobile" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-zunkiree-500 rounded-full z-10"></div>
+        </div>
+
+        {# Center: Zunkiree Search Engine #}
+        <div class="text-white rounded-[30px] px-6 py-6 text-center shadow-xl relative z-10 overflow-hidden border-4 border-warm-200/50 w-full max-w-sm" style="background-image: url('/assets/images/zunkiree-search-bg.avif'); background-size: cover; background-position: center;" data-connector-mobile="center">
+          <div class="absolute inset-0 bg-black/15"></div>
+          <div class="relative flex items-center justify-center gap-4">
+            <div class="text-center">
+              <h3 class="text-xl font-semibold whitespace-nowrap tracking-tight">Zunkiree Search</h3>
+              <p class="text-white/60 text-xs mt-1">AI-Native Engine</p>
+            </div>
+          </div>
+        </div>
+
+        {# Divergence Point #}
+        <div class="relative w-full flex justify-center" style="height: 60px;">
+          <div id="divergence-point-mobile" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3 h-3 bg-zunkiree-500 rounded-full z-10"></div>
+        </div>
+
+        {# 2x2 Grid for User Experiences #}
+        <div class="grid grid-cols-2 gap-3 w-full mb-4 relative z-10" id="user-exp-grid-mobile">
+          <div class="bg-warm-surface rounded-xl p-3 flex items-center gap-2 relative" data-connector-mobile="target-1">
+            <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-4 h-4 text-warm-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+            </div>
+            <span class="text-warm-700 font-medium text-sm">Search</span>
+          </div>
+          <div class="bg-warm-surface rounded-xl p-3 flex items-center gap-2 relative" data-connector-mobile="target-2">
+            <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-4 h-4 text-warm-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+              </svg>
+            </div>
+            <span class="text-warm-700 font-medium text-sm">Chatbots</span>
+          </div>
+          <div class="bg-warm-surface rounded-xl p-3 flex items-center gap-2 relative" data-connector-mobile="target-3">
+            <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-4 h-4 text-warm-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+              </svg>
+            </div>
+            <span class="text-warm-700 font-medium text-sm">Dashboards</span>
+          </div>
+          <div class="bg-warm-surface rounded-xl p-3 flex items-center gap-2 relative" data-connector-mobile="target-4">
+            <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+              <svg class="w-4 h-4 text-warm-charcoal" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <span class="text-warm-700 font-medium text-sm">Mobile</span>
+          </div>
+        </div>
+
+        {# User Experiences Title at Bottom #}
+        <h3 class="text-lg font-medium text-warm-black text-center mt-2">User Experiences</h3>
+      </div>
+
+      {# SVG Flow Lines Overlay for Mobile #}
+      <svg id="connector-svg-mobile" class="absolute inset-0 w-full h-full pointer-events-none" style="z-index: 5;">
+        <defs>
+          <linearGradient id="inflowGradMobile" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#d1d5db" />
+            <stop offset="100%" stop-color="#eb1600" />
+          </linearGradient>
+          <linearGradient id="outflowGradMobile" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#eb1600" />
+            <stop offset="100%" stop-color="#d1d5db" />
+          </linearGradient>
+          <filter id="glowMobile" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+            <feMerge>
+              <feMergeNode in="coloredBlur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+        </defs>
+        <g id="connector-paths-mobile"></g>
+        <g id="connector-dots-mobile"></g>
+      </svg>
+    </div>
+
+    {# ==================== DESKTOP LAYOUT (Original from main branch) - Shows on md+ ==================== #}
+    <div class="relative hidden md:block" data-reveal id="architecture-diagram">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-stretch">
         {# Left: Data Sources #}
         <div class="flex flex-col relative z-10 items-start">
@@ -1190,30 +1308,17 @@ permalink: /
           </div>
         </div>
 
-        {# Center: Zunkiree Search Engine - Oval Search Bar Style #}
+        {# Center: Zunkiree Search Engine #}
         <div class="flex flex-col relative z-20">
-          {# Invisible spacer to match left/right column headers #}
           <h3 class="text-lg font-medium text-center mb-6 invisible hidden md:block" aria-hidden="true">&nbsp;</h3>
-          {# Desktop version - Oval/Pill shaped with background image #}
           <div class="hidden md:flex flex-1 items-start justify-center pt-[120px]">
             <div class="text-white rounded-[40px] px-10 py-8 text-center shadow-xl relative overflow-hidden border-4 border-warm-200/50" style="min-width: 300px; background-image: url('/assets/images/zunkiree-search-bg.avif'); background-size: cover; background-position: center;" data-connector="center">
-              {# Dark overlay for text readability #}
               <div class="absolute inset-0 bg-black/15"></div>
               <div class="relative flex items-center justify-center gap-4">
                 <div class="text-center">
                   <h3 class="text-2xl font-semibold whitespace-nowrap tracking-tight">Zunkiree Search</h3>
                   <p class="text-white/60 text-xs mt-1">AI-Native Engine</p>
                 </div>
-              </div>
-            </div>
-          </div>
-          {# Mobile version #}
-          <div class="md:hidden text-white rounded-[30px] px-8 py-6 text-center shadow-xl w-full max-w-xs mx-auto relative overflow-hidden border-4 border-warm-200/50" style="background-image: url('/assets/images/zunkiree-search-bg.avif'); background-size: cover; background-position: center;">
-            <div class="absolute inset-0 bg-black/15"></div>
-            <div class="relative flex items-center justify-center gap-3">
-              <div class="text-center">
-                <h3 class="text-lg font-semibold tracking-tight">Zunkiree Search</h3>
-                <p class="text-white/60 text-[10px] mt-0.5">AI-Native Engine</p>
               </div>
             </div>
           </div>
@@ -1259,7 +1364,7 @@ permalink: /
         </div>
       </div>
 
-      {# SVG Flow Lines Overlay - Dynamically positioned via JavaScript #}
+      {# SVG Flow Lines Overlay - Original from main #}
       <svg id="connector-svg" class="absolute inset-0 w-full h-full pointer-events-none hidden md:block" style="z-index: 5;">
         <defs>
           <linearGradient id="inflowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -1281,184 +1386,300 @@ permalink: /
         <g id="connector-paths"></g>
         <g id="connector-dots"></g>
       </svg>
-
-      {# JavaScript for dynamic connector positioning #}
-      <script>
-        (function() {
-          function drawConnectors() {
-            const container = document.getElementById('architecture-diagram');
-            const svg = document.getElementById('connector-svg');
-            const pathsGroup = document.getElementById('connector-paths');
-            const dotsGroup = document.getElementById('connector-dots');
-
-            if (!container || !svg || !pathsGroup || !dotsGroup) return;
-
-            // Get container bounds for relative positioning
-            const containerRect = container.getBoundingClientRect();
-
-            // Get center element
-            const center = document.querySelector('[data-connector="center"]');
-            if (!center) return;
-            const centerRect = center.getBoundingClientRect();
-
-            // Calculate center point relative to container
-            const centerLeft = centerRect.left - containerRect.left;
-            const centerRight = centerRect.right - containerRect.left;
-            const centerY = centerRect.top - containerRect.top + centerRect.height / 2;
-
-            // Clear existing paths and dots
-            pathsGroup.innerHTML = '';
-            dotsGroup.innerHTML = '';
-
-            // Get all source and target elements
-            const sources = [1, 2, 3, 4].map(i => document.querySelector(`[data-connector="source-${i}"]`));
-            const targets = [1, 2, 3, 4].map(i => document.querySelector(`[data-connector="target-${i}"]`));
-
-            // Draw inflow paths (sources → center)
-            sources.forEach((source, index) => {
-              if (!source) return;
-              const rect = source.getBoundingClientRect();
-              const startX = rect.right - containerRect.left;
-              const startY = rect.top - containerRect.top + rect.height / 2;
-              const endX = centerLeft;
-              const endY = centerY;
-
-              // Control points for smooth Bézier curve
-              const cp1x = startX + (endX - startX) * 0.4;
-              const cp1y = startY;
-              const cp2x = startX + (endX - startX) * 0.6;
-              const cp2y = endY;
-
-              const pathId = `flowIn${index + 1}`;
-              const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-              path.setAttribute('id', pathId);
-              path.setAttribute('d', `M ${startX} ${startY} C ${cp1x} ${cp1y}, ${cp2x} ${cp2y}, ${endX} ${endY}`);
-              path.setAttribute('stroke', 'url(#inflowGrad)');
-              path.setAttribute('stroke-width', '2');
-              path.setAttribute('fill', 'none');
-              path.setAttribute('opacity', '0.6');
-              path.setAttribute('stroke-dasharray', '6 4');
-              pathsGroup.appendChild(path);
-
-              // Animated dot
-              const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-              circle.setAttribute('r', '2.5');
-              circle.setAttribute('fill', '#eb1600');
-              circle.setAttribute('filter', 'url(#glow)');
-
-              const animateMotion = document.createElementNS('http://www.w3.org/2000/svg', 'animateMotion');
-              animateMotion.setAttribute('dur', `${1.8 + index * 0.1}s`);
-              animateMotion.setAttribute('repeatCount', 'indefinite');
-              animateMotion.setAttribute('begin', `${index * 0.3}s`);
-
-              const mpath = document.createElementNS('http://www.w3.org/2000/svg', 'mpath');
-              mpath.setAttribute('href', `#${pathId}`);
-              animateMotion.appendChild(mpath);
-
-              const animateOpacity = document.createElementNS('http://www.w3.org/2000/svg', 'animate');
-              animateOpacity.setAttribute('attributeName', 'opacity');
-              animateOpacity.setAttribute('values', '0;1;1;0');
-              animateOpacity.setAttribute('keyTimes', '0;0.1;0.9;1');
-              animateOpacity.setAttribute('dur', `${1.8 + index * 0.1}s`);
-              animateOpacity.setAttribute('repeatCount', 'indefinite');
-              animateOpacity.setAttribute('begin', `${index * 0.3}s`);
-
-              circle.appendChild(animateMotion);
-              circle.appendChild(animateOpacity);
-              dotsGroup.appendChild(circle);
-            });
-
-            // Draw outflow paths (center → targets)
-            targets.forEach((target, index) => {
-              if (!target) return;
-              const rect = target.getBoundingClientRect();
-              const startX = centerRight;
-              const startY = centerY;
-              const endX = rect.left - containerRect.left;
-              const endY = rect.top - containerRect.top + rect.height / 2;
-
-              // Control points for smooth Bézier curve
-              const cp1x = startX + (endX - startX) * 0.4;
-              const cp1y = startY;
-              const cp2x = startX + (endX - startX) * 0.6;
-              const cp2y = endY;
-
-              const pathId = `flowOut${index + 1}`;
-              const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-              path.setAttribute('id', pathId);
-              path.setAttribute('d', `M ${startX} ${startY} C ${cp1x} ${cp1y}, ${cp2x} ${cp2y}, ${endX} ${endY}`);
-              path.setAttribute('stroke', 'url(#outflowGrad)');
-              path.setAttribute('stroke-width', '2');
-              path.setAttribute('fill', 'none');
-              path.setAttribute('opacity', '0.6');
-              path.setAttribute('stroke-dasharray', '6 4');
-              pathsGroup.appendChild(path);
-
-              // Animated dot
-              const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-              circle.setAttribute('r', '2.5');
-              circle.setAttribute('fill', '#eb1600');
-              circle.setAttribute('filter', 'url(#glow)');
-
-              const animateMotion = document.createElementNS('http://www.w3.org/2000/svg', 'animateMotion');
-              animateMotion.setAttribute('dur', `${1.8 + index * 0.1}s`);
-              animateMotion.setAttribute('repeatCount', 'indefinite');
-              animateMotion.setAttribute('begin', `${1.2 + index * 0.3}s`);
-
-              const mpath = document.createElementNS('http://www.w3.org/2000/svg', 'mpath');
-              mpath.setAttribute('href', `#${pathId}`);
-              animateMotion.appendChild(mpath);
-
-              const animateOpacity = document.createElementNS('http://www.w3.org/2000/svg', 'animate');
-              animateOpacity.setAttribute('attributeName', 'opacity');
-              animateOpacity.setAttribute('values', '0;1;1;0');
-              animateOpacity.setAttribute('keyTimes', '0;0.1;0.9;1');
-              animateOpacity.setAttribute('dur', `${1.8 + index * 0.1}s`);
-              animateOpacity.setAttribute('repeatCount', 'indefinite');
-              animateOpacity.setAttribute('begin', `${1.2 + index * 0.3}s`);
-
-              circle.appendChild(animateMotion);
-              circle.appendChild(animateOpacity);
-              dotsGroup.appendChild(circle);
-            });
-          }
-
-          // Debounce function for resize
-          function debounce(func, wait) {
-            let timeout;
-            return function executedFunction(...args) {
-              const later = () => {
-                clearTimeout(timeout);
-                func(...args);
-              };
-              clearTimeout(timeout);
-              timeout = setTimeout(later, wait);
-            };
-          }
-
-          // Initialize on DOM ready and window load
-          if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', drawConnectors);
-          } else {
-            drawConnectors();
-          }
-
-          // Redraw after images/fonts load
-          window.addEventListener('load', drawConnectors);
-
-          // Redraw on resize (debounced)
-          window.addEventListener('resize', debounce(drawConnectors, 100));
-        })();
-      </script>
     </div>
+
+    {# JavaScript for dynamic connector positioning #}
+    <script>
+      (function() {
+        // Mobile Layout Connectors (Vertical)
+        function drawConnectorsMobile() {
+          const container = document.getElementById('architecture-diagram-mobile');
+          const svg = document.getElementById('connector-svg-mobile');
+          const pathsGroup = document.getElementById('connector-paths-mobile');
+          const dotsGroup = document.getElementById('connector-dots-mobile');
+          const convergencePoint = document.getElementById('convergence-point-mobile');
+          const divergencePoint = document.getElementById('divergence-point-mobile');
+
+          if (!container || !svg || !pathsGroup || !dotsGroup || !convergencePoint || !divergencePoint) return;
+          if (container.offsetParent === null) return;
+
+          const containerRect = container.getBoundingClientRect();
+          const convRect = convergencePoint.getBoundingClientRect();
+          const divRect = divergencePoint.getBoundingClientRect();
+
+          const convX = convRect.left - containerRect.left + convRect.width / 2;
+          const convY = convRect.top - containerRect.top + convRect.height / 2;
+          const divX = divRect.left - containerRect.left + divRect.width / 2;
+          const divY = divRect.top - containerRect.top + divRect.height / 2;
+
+          const center = document.querySelector('[data-connector-mobile="center"]');
+          if (!center) return;
+          const centerRect = center.getBoundingClientRect();
+          const centerX = centerRect.left - containerRect.left + centerRect.width / 2;
+          const centerTopY = centerRect.top - containerRect.top;
+          const centerBottomY = centerRect.bottom - containerRect.top;
+
+          pathsGroup.innerHTML = '';
+          dotsGroup.innerHTML = '';
+
+          const sources = [1, 2, 3, 4].map(i => document.querySelector(`[data-connector-mobile="source-${i}"]`));
+          const targets = [1, 2, 3, 4].map(i => document.querySelector(`[data-connector-mobile="target-${i}"]`));
+
+          sources.forEach((source, index) => {
+            if (!source) return;
+            const rect = source.getBoundingClientRect();
+            const startX = rect.left - containerRect.left + rect.width / 2;
+            const startY = rect.bottom - containerRect.top;
+
+            const pathId = `flowInMobile${index + 1}`;
+            const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            path.setAttribute('id', pathId);
+            const midY = startY + (convY - startY) * 0.5;
+            path.setAttribute('d', `M ${startX} ${startY} Q ${startX} ${midY}, ${convX} ${convY}`);
+            path.setAttribute('stroke', 'url(#inflowGradMobile)');
+            path.setAttribute('stroke-width', '2');
+            path.setAttribute('fill', 'none');
+            path.setAttribute('opacity', '0.6');
+            path.setAttribute('stroke-dasharray', '6 4');
+            pathsGroup.appendChild(path);
+
+            const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            circle.setAttribute('r', '2.5');
+            circle.setAttribute('fill', '#eb1600');
+            circle.setAttribute('filter', 'url(#glowMobile)');
+            const animateMotion = document.createElementNS('http://www.w3.org/2000/svg', 'animateMotion');
+            animateMotion.setAttribute('dur', `${1.5 + index * 0.1}s`);
+            animateMotion.setAttribute('repeatCount', 'indefinite');
+            animateMotion.setAttribute('begin', `${index * 0.2}s`);
+            const mpath = document.createElementNS('http://www.w3.org/2000/svg', 'mpath');
+            mpath.setAttribute('href', `#${pathId}`);
+            animateMotion.appendChild(mpath);
+            const animateOpacity = document.createElementNS('http://www.w3.org/2000/svg', 'animate');
+            animateOpacity.setAttribute('attributeName', 'opacity');
+            animateOpacity.setAttribute('values', '0;1;1;0');
+            animateOpacity.setAttribute('keyTimes', '0;0.1;0.9;1');
+            animateOpacity.setAttribute('dur', `${1.5 + index * 0.1}s`);
+            animateOpacity.setAttribute('repeatCount', 'indefinite');
+            animateOpacity.setAttribute('begin', `${index * 0.2}s`);
+            circle.appendChild(animateMotion);
+            circle.appendChild(animateOpacity);
+            dotsGroup.appendChild(circle);
+          });
+
+          const convToCenterPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+          convToCenterPath.setAttribute('d', `M ${convX} ${convY} L ${centerX} ${centerTopY}`);
+          convToCenterPath.setAttribute('stroke', '#eb1600');
+          convToCenterPath.setAttribute('stroke-width', '2');
+          convToCenterPath.setAttribute('fill', 'none');
+          convToCenterPath.setAttribute('opacity', '0.6');
+          convToCenterPath.setAttribute('stroke-dasharray', '6 4');
+          pathsGroup.appendChild(convToCenterPath);
+
+          const centerToDivPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+          centerToDivPath.setAttribute('d', `M ${centerX} ${centerBottomY} L ${divX} ${divY}`);
+          centerToDivPath.setAttribute('stroke', '#eb1600');
+          centerToDivPath.setAttribute('stroke-width', '2');
+          centerToDivPath.setAttribute('fill', 'none');
+          centerToDivPath.setAttribute('opacity', '0.6');
+          centerToDivPath.setAttribute('stroke-dasharray', '6 4');
+          pathsGroup.appendChild(centerToDivPath);
+
+          targets.forEach((target, index) => {
+            if (!target) return;
+            const rect = target.getBoundingClientRect();
+            const endX = rect.left - containerRect.left + rect.width / 2;
+            const endY = rect.top - containerRect.top;
+
+            const pathId = `flowOutMobile${index + 1}`;
+            const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            path.setAttribute('id', pathId);
+            const midY = divY + (endY - divY) * 0.5;
+            path.setAttribute('d', `M ${divX} ${divY} Q ${endX} ${midY}, ${endX} ${endY}`);
+            path.setAttribute('stroke', 'url(#outflowGradMobile)');
+            path.setAttribute('stroke-width', '2');
+            path.setAttribute('fill', 'none');
+            path.setAttribute('opacity', '0.6');
+            path.setAttribute('stroke-dasharray', '6 4');
+            pathsGroup.appendChild(path);
+
+            const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            circle.setAttribute('r', '2.5');
+            circle.setAttribute('fill', '#eb1600');
+            circle.setAttribute('filter', 'url(#glowMobile)');
+            const animateMotion = document.createElementNS('http://www.w3.org/2000/svg', 'animateMotion');
+            animateMotion.setAttribute('dur', `${1.5 + index * 0.1}s`);
+            animateMotion.setAttribute('repeatCount', 'indefinite');
+            animateMotion.setAttribute('begin', `${1.0 + index * 0.2}s`);
+            const mpath = document.createElementNS('http://www.w3.org/2000/svg', 'mpath');
+            mpath.setAttribute('href', `#${pathId}`);
+            animateMotion.appendChild(mpath);
+            const animateOpacity = document.createElementNS('http://www.w3.org/2000/svg', 'animate');
+            animateOpacity.setAttribute('attributeName', 'opacity');
+            animateOpacity.setAttribute('values', '0;1;1;0');
+            animateOpacity.setAttribute('keyTimes', '0;0.1;0.9;1');
+            animateOpacity.setAttribute('dur', `${1.5 + index * 0.1}s`);
+            animateOpacity.setAttribute('repeatCount', 'indefinite');
+            animateOpacity.setAttribute('begin', `${1.0 + index * 0.2}s`);
+            circle.appendChild(animateMotion);
+            circle.appendChild(animateOpacity);
+            dotsGroup.appendChild(circle);
+          });
+        }
+
+        // Desktop Layout Connectors (Original from main)
+        function drawConnectorsDesktop() {
+          const container = document.getElementById('architecture-diagram');
+          const svg = document.getElementById('connector-svg');
+          const pathsGroup = document.getElementById('connector-paths');
+          const dotsGroup = document.getElementById('connector-dots');
+
+          if (!container || !svg || !pathsGroup || !dotsGroup) return;
+          if (container.offsetParent === null) return;
+
+          const containerRect = container.getBoundingClientRect();
+          const center = document.querySelector('[data-connector="center"]');
+          if (!center) return;
+          const centerRect = center.getBoundingClientRect();
+
+          const centerLeft = centerRect.left - containerRect.left;
+          const centerRight = centerRect.right - containerRect.left;
+          const centerY = centerRect.top - containerRect.top + centerRect.height / 2;
+
+          pathsGroup.innerHTML = '';
+          dotsGroup.innerHTML = '';
+
+          const sources = [1, 2, 3, 4].map(i => document.querySelector(`[data-connector="source-${i}"]`));
+          const targets = [1, 2, 3, 4].map(i => document.querySelector(`[data-connector="target-${i}"]`));
+
+          sources.forEach((source, index) => {
+            if (!source) return;
+            const rect = source.getBoundingClientRect();
+            const startX = rect.right - containerRect.left;
+            const startY = rect.top - containerRect.top + rect.height / 2;
+            const endX = centerLeft;
+            const endY = centerY;
+
+            const cp1x = startX + (endX - startX) * 0.4;
+            const cp1y = startY;
+            const cp2x = startX + (endX - startX) * 0.6;
+            const cp2y = endY;
+
+            const pathId = `flowIn${index + 1}`;
+            const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            path.setAttribute('id', pathId);
+            path.setAttribute('d', `M ${startX} ${startY} C ${cp1x} ${cp1y}, ${cp2x} ${cp2y}, ${endX} ${endY}`);
+            path.setAttribute('stroke', 'url(#inflowGrad)');
+            path.setAttribute('stroke-width', '2');
+            path.setAttribute('fill', 'none');
+            path.setAttribute('opacity', '0.6');
+            path.setAttribute('stroke-dasharray', '6 4');
+            pathsGroup.appendChild(path);
+
+            const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            circle.setAttribute('r', '2.5');
+            circle.setAttribute('fill', '#eb1600');
+            circle.setAttribute('filter', 'url(#glow)');
+            const animateMotion = document.createElementNS('http://www.w3.org/2000/svg', 'animateMotion');
+            animateMotion.setAttribute('dur', `${1.8 + index * 0.1}s`);
+            animateMotion.setAttribute('repeatCount', 'indefinite');
+            animateMotion.setAttribute('begin', `${index * 0.3}s`);
+            const mpath = document.createElementNS('http://www.w3.org/2000/svg', 'mpath');
+            mpath.setAttribute('href', `#${pathId}`);
+            animateMotion.appendChild(mpath);
+            const animateOpacity = document.createElementNS('http://www.w3.org/2000/svg', 'animate');
+            animateOpacity.setAttribute('attributeName', 'opacity');
+            animateOpacity.setAttribute('values', '0;1;1;0');
+            animateOpacity.setAttribute('keyTimes', '0;0.1;0.9;1');
+            animateOpacity.setAttribute('dur', `${1.8 + index * 0.1}s`);
+            animateOpacity.setAttribute('repeatCount', 'indefinite');
+            animateOpacity.setAttribute('begin', `${index * 0.3}s`);
+            circle.appendChild(animateMotion);
+            circle.appendChild(animateOpacity);
+            dotsGroup.appendChild(circle);
+          });
+
+          targets.forEach((target, index) => {
+            if (!target) return;
+            const rect = target.getBoundingClientRect();
+            const startX = centerRight;
+            const startY = centerY;
+            const endX = rect.left - containerRect.left;
+            const endY = rect.top - containerRect.top + rect.height / 2;
+
+            const cp1x = startX + (endX - startX) * 0.4;
+            const cp1y = startY;
+            const cp2x = startX + (endX - startX) * 0.6;
+            const cp2y = endY;
+
+            const pathId = `flowOut${index + 1}`;
+            const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            path.setAttribute('id', pathId);
+            path.setAttribute('d', `M ${startX} ${startY} C ${cp1x} ${cp1y}, ${cp2x} ${cp2y}, ${endX} ${endY}`);
+            path.setAttribute('stroke', 'url(#outflowGrad)');
+            path.setAttribute('stroke-width', '2');
+            path.setAttribute('fill', 'none');
+            path.setAttribute('opacity', '0.6');
+            path.setAttribute('stroke-dasharray', '6 4');
+            pathsGroup.appendChild(path);
+
+            const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+            circle.setAttribute('r', '2.5');
+            circle.setAttribute('fill', '#eb1600');
+            circle.setAttribute('filter', 'url(#glow)');
+            const animateMotion = document.createElementNS('http://www.w3.org/2000/svg', 'animateMotion');
+            animateMotion.setAttribute('dur', `${1.8 + index * 0.1}s`);
+            animateMotion.setAttribute('repeatCount', 'indefinite');
+            animateMotion.setAttribute('begin', `${1.2 + index * 0.3}s`);
+            const mpath = document.createElementNS('http://www.w3.org/2000/svg', 'mpath');
+            mpath.setAttribute('href', `#${pathId}`);
+            animateMotion.appendChild(mpath);
+            const animateOpacity = document.createElementNS('http://www.w3.org/2000/svg', 'animate');
+            animateOpacity.setAttribute('attributeName', 'opacity');
+            animateOpacity.setAttribute('values', '0;1;1;0');
+            animateOpacity.setAttribute('keyTimes', '0;0.1;0.9;1');
+            animateOpacity.setAttribute('dur', `${1.8 + index * 0.1}s`);
+            animateOpacity.setAttribute('repeatCount', 'indefinite');
+            animateOpacity.setAttribute('begin', `${1.2 + index * 0.3}s`);
+            circle.appendChild(animateMotion);
+            circle.appendChild(animateOpacity);
+            dotsGroup.appendChild(circle);
+          });
+        }
+
+        function drawAllConnectors() {
+          drawConnectorsMobile();
+          drawConnectorsDesktop();
+        }
+
+        function debounce(func, wait) {
+          let timeout;
+          return function executedFunction(...args) {
+            const later = () => {
+              clearTimeout(timeout);
+              func(...args);
+            };
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+          };
+        }
+
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', drawAllConnectors);
+        } else {
+          drawAllConnectors();
+        }
+        window.addEventListener('load', drawAllConnectors);
+        window.addEventListener('resize', debounce(drawAllConnectors, 100));
+      })();
+    </script>
   </div>
 </section>
 
 {# =====================================================
    SECTION 7: PLATFORM MINDSET
    ===================================================== #}
-<section class="py-16 md:py-24 lg:py-32 bg-warm-off-white">
-  <div class="max-w-[1200px] mx-auto px-5 md:px-10">
+<section class="py-16 md:py-24 lg:py-32 px-4 md:px-6">
+  <div class="max-w-[1200px] mx-auto">
     {# Section Header #}
     <div class="text-center max-w-2xl mx-auto mb-16" data-reveal>
       <h2 class="text-3xl md:text-4xl lg:text-[44px] font-medium text-warm-black tracking-[-0.03em] leading-[1.2] mb-5">
@@ -1526,13 +1747,22 @@ permalink: /
 {# =====================================================
    SECTION 9: CTA (Final)
    ===================================================== #}
-<section class="py-20 md:py-28 lg:py-36 bg-warm-rich-black">
-  <div class="max-w-[1200px] mx-auto px-5 md:px-10">
-    <div class="max-w-2xl mx-auto text-center" data-reveal>
+<section class="py-20 md:py-28 lg:py-36 relative overflow-hidden px-4 md:px-6">
+  {# Landscape Background Image #}
+  <div class="absolute inset-0">
+    <img src="/assets/images/testimonial-bg-mountains.jpg" alt="" class="w-full h-full object-cover" />
+  </div>
+
+  {# Dark Overlay #}
+  <div class="absolute inset-0 bg-black/30"></div>
+
+  <div class="max-w-[1200px] mx-auto relative z-10">
+    {# Frosted Glass Card #}
+    <div class="bg-white/10 backdrop-blur-xl rounded-2xl p-8 md:p-12 lg:p-16 max-w-2xl mx-auto text-center border border-white/20" data-reveal>
       <h2 class="text-3xl md:text-4xl lg:text-[48px] font-medium text-white tracking-[-0.03em] leading-[1.15] mb-6">
         Start a conversation
       </h2>
-      <p class="text-lg text-white/60 mb-10 leading-relaxed tracking-[-0.01em]">
+      <p class="text-lg text-white/70 mb-10 leading-relaxed tracking-[-0.01em]">
         Whether you're exploring Zunkiree Search, interested in partnerships, or learning more about our platforms, we're open to conversations.
       </p>
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -1540,7 +1770,7 @@ permalink: /
           Schedule a Demo
           <span>&rarr;</span>
         </a>
-        <a href="mailto:{{ site.email }}" class="inline-flex items-center gap-2 text-white/60 hover:text-white font-medium transition-colors">
+        <a href="mailto:{{ site.email }}" class="inline-flex items-center gap-2 text-white/70 hover:text-white font-medium transition-colors">
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
           </svg>
