@@ -245,16 +245,54 @@ Based on an 8px grid for consistent rhythm.
 
 ### Section Spacing
 
+All sections follow a consistent, compact spacing pattern:
+
+| Section Type | Tailwind Classes | Mobile | Desktop |
+|--------------|------------------|--------|---------|
+| **Standard** | `py-12 md:py-16` | 48px | 64px |
+| **Feature** (Zunkiree Search, CTA) | `py-12 md:py-20` | 48px | 80px |
+| **Utility** (Stats, Logos) | `py-8 md:py-12` | 32px | 48px |
+
+**Important:** Section outer padding must match the navbar for alignment:
+- Add `px-4 md:px-6` to `<section>` elements
+- Inner container uses `max-w-[1200px] mx-auto` (no additional px)
+
 ```html
 <!-- Standard section -->
-<section class="py-12 md:py-16 lg:py-20">
+<section class="py-12 md:py-16 px-4 md:px-6">
+  <div class="max-w-[1200px] mx-auto">
+    <!-- Content -->
+  </div>
+</section>
 
-<!-- Large section (hero, CTA) -->
-<section class="py-16 md:py-24 lg:py-32">
+<!-- Feature section (more vertical space) -->
+<section class="py-12 md:py-20 px-4 md:px-6">
+  <div class="max-w-[1200px] mx-auto">
+    <!-- Content -->
+  </div>
+</section>
 
-<!-- Compact section -->
-<section class="py-8 md:py-12 lg:py-16">
+<!-- Utility section (compact) -->
+<section class="py-8 md:py-12 px-4 md:px-6">
+  <div class="max-w-[1200px] mx-auto">
+    <!-- Content -->
+  </div>
+</section>
 ```
+
+### Homepage Section Reference
+
+| Section | Type | Classes |
+|---------|------|---------|
+| Hero | Full viewport | `min-h-screen px-4 md:px-6` |
+| Clients/Partners | Utility | `py-12 md:py-16` |
+| Trusted by Leaders | Standard | `py-12 md:py-16` |
+| Value Proposition | Standard | `py-12 md:py-16` |
+| Stats | Utility | `py-8 md:py-12` |
+| Zunkiree Search | Feature | `py-12 md:py-20` |
+| Platform Architecture | Standard | `py-12 md:py-16` |
+| Platform Mindset | Standard | `py-12 md:py-16` |
+| Final CTA | Feature | `py-12 md:py-20` |
 
 ---
 
@@ -262,17 +300,27 @@ Based on an 8px grid for consistent rhythm.
 
 ### Container
 
+**New Pattern (Recommended):** Padding on section, not inner container.
+
 ```html
-<div class="max-w-[1200px] mx-auto px-5 md:px-10 lg:px-10">
-  <!-- Content -->
-</div>
+<!-- Section with outer padding -->
+<section class="py-12 md:py-16 px-4 md:px-6">
+  <div class="max-w-[1200px] mx-auto">
+    <!-- Content -->
+  </div>
+</section>
 ```
 
-| Breakpoint | Max Width | Horizontal Padding |
-|------------|-----------|-------------------|
-| Desktop (1200px+) | 1200px | 40px (px-10) |
-| Tablet (720px - 1199px) | 100% | 40px (px-10) |
-| Mobile (< 720px) | 100% | 20px (px-5) |
+| Breakpoint | Max Width | Section Padding |
+|------------|-----------|-----------------|
+| Desktop (1200px+) | 1200px | 24px (px-6) |
+| Tablet (720px - 1199px) | 100% | 24px (px-6) |
+| Mobile (< 720px) | 100% | 16px (px-4) |
+
+**Why this pattern?**
+- Aligns content with the navbar (which uses `px-4 md:px-6`)
+- Keeps inner container clean (`max-w-[1200px] mx-auto`)
+- Consistent alignment across all pages
 
 ### Breakpoints
 
@@ -651,9 +699,16 @@ gsap.from('[data-reveal-stagger] > *', {
   <!-- Content -->
 </div>
 
-<!-- Section -->
-<section class="py-16 md:py-24 lg:py-32">
-  <div class="max-w-[1200px] mx-auto px-5 md:px-10">
+<!-- Section (Standard) -->
+<section class="py-12 md:py-16 px-4 md:px-6">
+  <div class="max-w-[1200px] mx-auto">
+    <!-- Content -->
+  </div>
+</section>
+
+<!-- Section (Feature) -->
+<section class="py-12 md:py-20 px-4 md:px-6">
+  <div class="max-w-[1200px] mx-auto">
     <!-- Content -->
   </div>
 </section>
@@ -672,10 +727,10 @@ gsap.from('[data-reveal-stagger] > *', {
 | **Border radius** | 12-16px | 12-24px (more rounded) |
 | **Shadows** | Standard Tailwind | Subtle, minimal |
 | **Container** | 1280px | 1200px |
-| **Section spacing** | 64-128px | 80-144px (more generous) |
+| **Section spacing** | 64-128px | 48-80px (compact, consistent) |
 | **Input backgrounds** | White | Off-white/Surface |
 
 ---
 
-*Last updated: December 2024*
-*Version: 3.0 - Duna-Inspired Design System*
+*Last updated: January 2026*
+*Version: 3.1 - Duna-Inspired Design System (Updated section spacing)*
